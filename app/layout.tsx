@@ -48,24 +48,24 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`scroll-smooth ${inter.variable} ${instrumentSans.variable}`}
     >
-      <head>
-        {/* Google Site Verification Code */}
-        <meta name="google-site-verification" content="GowGB5YqmsBvTssoftZxLtLt25Vv7aVCPPzFiUqDPvo" />
+    <head>
+  {/* Google Site Verification Code */}
+  <meta name="google-site-verification" content="PXrBiu2VA4D2pHIyKKw6TA9d_Qkn2CJ1pCPyFYH5UAQ" />
 
-        {/* Google Analytics Scripts */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-GC1MBVHBW7"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+  {/* Google Analytics Scripts */}
+  <Script
+    src="https://www.googletagmanager.com/gtag/js?id=G-GC1MBVHBW7"
+    strategy="afterInteractive"
+  />
+  <Script id="google-analytics" strategy="afterInteractive">
+    {`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-GC1MBVHBW7');
     `}
-        </Script>
-      </head>
+  </Script>
+</head>
       <body
         className="bg-[#111827] text-white antialiased overflow-x-hidden selection:bg-blue-600/30"
         suppressHydrationWarning

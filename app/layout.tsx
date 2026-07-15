@@ -22,7 +22,7 @@ const inter = Inter({
 
 export const metadata = {
   // 🎯 FIXED: Domain mismatch theek kar diya (.io set kiya taake sitemap se match ho)
-  metadataBase: new URL('https://highrisedigital.io'), 
+  metadataBase: new URL('https://highrisedigital.io'),
   title: siteMetadata.home.title,
   description: siteMetadata.home.description,
   icons: {
@@ -49,17 +49,21 @@ export default function RootLayout({
       className={`scroll-smooth ${inter.variable} ${instrumentSans.variable}`}
     >
       <head>
+        {/* Google Site Verification Code */}
+        <meta name="google-site-verification" content="GowGB5YqmsBvTssoftZxLtLt25Vv7aVCPPzFiUqDPvo" />
+
+        {/* Google Analytics Scripts */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-GC1MBVHBW7"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GC1MBVHBW7');
-          `}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GC1MBVHBW7');
+    `}
         </Script>
       </head>
       <body

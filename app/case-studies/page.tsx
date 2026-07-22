@@ -82,7 +82,7 @@ export const projects = [
     slug: "vilabarbaut",
     title: "Vila Barbaut",
     category: "web",
-    image: "/vilabarbaut.png",
+    image: "/villabarbaut.png",
     liveUrl: "https://vilabarbaut.com/"
   },
 

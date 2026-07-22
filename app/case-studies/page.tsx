@@ -43,13 +43,13 @@ export const projects = [
   },
 
 
-  // {
-  //   slug: "car-recovery",
-  //   title: "Car Recovery London",
-  //   category: "web",
-  //   image: "/web8.jpg",
-  //   liveUrl: "https://carsrecoverylondon.com/"
-  // },
+  {
+    slug: "car-recovery",
+    title: "Car Recovery London",
+    category: "web",
+    image: "/car-recovery.png",
+    liveUrl: "https://carsrecoverylondon.com/"
+  },
   {
     slug: "crese",
     title: "Cresa",
@@ -64,37 +64,51 @@ export const projects = [
     image: "/zaiqa.png",
     liveUrl: "https://zaiqahroyale.com/"
   },
+  {
+    slug: "nordic-socks",
+    title: "Nordic Socks",
+    category: "web",
+    image: "/nordic-socks.png",
+    liveUrl: "https://www.nordicsocks.com/"
+  },
+  {
+    slug: "rugs-and-carpets",
+    title: "Rugs and Carpets",
+    category: "web",
+    image: "/rugs-carpet.png",
+    liveUrl: "https://rugsandcarpets.ae/"
+  },
+  {
+    slug: "vilabarbaut",
+    title: "Vila Barbaut",
+    category: "web",
+    image: "/vilabarbaut.png",
+    liveUrl: "https://vilabarbaut.com/"
+  },
 
 
   // --- SEO PERFORMANCE CAMPAIGNS (6 Projects) ---
-  //   {
-  //  slug: "170-leads-increased-for-roofing-company",
-  //     title: "170% Leads Increased For Roofing Company",
-  //     category: "seo",
-  //     image: "/rino-roffers.jpg"
-  //   },
-
   {
-    slug: "28-organic-traffic-increase-for-local-cleaning-company",
-    title: "+28% Organic Traffic Increase For Local Cleaning Company",
+    slug: "nordic-socks-28-organic-traffic",
+    title: "nordic-socks 28% Organic Traffic.",
     category: "seo",
-    image: "/cleaning.png"
+    image: "/nordic-socks.png"
   },
   {
-    slug: "6.69K-clicks-in-just-3-months-for-local-restaurant",
-    title: "+6.69K Clicks in Just 3 Months For Local Restaurant",
+    slug: "real-estate-company-achieved-1000-leads-in-3-months-with-seo",
+    title: "Real Estate Company Achieved 1,000+ Leads In 3 Months With SEO",
     category: "seo",
-    image: "/toddlert.png"
+    image: "/real-estate.png"
   },
   {
-    slug: "1-76k-leads-for-aesthetic-clinic",
-    title: "+1.76K Leads For Aesthetic Clinic",
+    slug: "marketing-agency-generated-1.76k-leads-in-3-months",
+    title: "Marketing Agency Generated 1.76K Leads In 3 Months",
     category: "seo",
     image: "/social-status.png"
   },
   {
-    slug: "#1-position-in-serp-for-holistic-doctor-clinic",
-    title: "#1 Position in SERP For Holistic Doctor Clinic",
+    slug: "fitness-brand-seo-case-study",
+    title: "Fitness Brand SEO Case Study: 1,000+ Leads in 3 Months",
     category: "seo",
     image: "/fitness-brand.png"
   },
@@ -104,25 +118,25 @@ export const projects = [
     slug: "31-increase-in-qualified-property-leads-via-high-intent-social-funnels",
     title: "31% Increase In Qualified Property Leads Via High-Intent Social Funnels",
     category: "social",
-    image: "/property.png"
+    image: "/s-property.png"
   },
   {
     slug: "598541-in-sales-at-22x-roas-for-private-label-fitness-brand",
     title: "$598,541 In Sales At 22x ROAS For Private Label Fitness Brand Via High-Converting Funnels",
     category: "social",
-    image: "/gym.png"
+    image: "/s-gym.png"
   },
   {
     slug: "1044-website-purchases-for-fashion-brand",
     title: "1,044 Website Purchases For Fashion Brand In 2 Months At 23.85x ROAS Via Direct-Response Funnels",
     category: "social",
-    image: "/fastion.png"
+    image: "/s-fastion.png"
   },
   {
     slug: "25-10x-roas-for-home-living-brand",
     title: "25.10x ROAS For Home & Living Brand Via High-Converting Paid Social Funnels",
     category: "social",
-    image: "/home-living.png"
+    image: "/s-home-living.png"
   }
 ];
 
@@ -266,7 +280,7 @@ export default function PortfolioPage() {
             {/* TITLE & ACTION BELOW THE IMAGE */}
             <div className="w-full px-1">
               <div className="flex items-start justify-between gap-4">
-                <h3 className="text-xl sm:text-2xl 2xl:text-3xl font-black tracking-normal text-white group-hover:text-cyan-400 transition-colors duration-300 leading-snug">
+                <h3 className="text-xl sm:text-2xl 2xl:text-3xl font-bold tracking-normal text-white group-hover:text-cyan-400 transition-colors duration-300 leading-snug">
                   {item.title}
                 </h3>
 

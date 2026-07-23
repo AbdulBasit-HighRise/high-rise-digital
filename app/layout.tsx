@@ -47,8 +47,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: siteMetadata.home.title,
     description: siteMetadata.home.description,
-    images: ['/about-preview.png'],
-  },
+images: ['https://highrisedigital.io/about-preview.png'],  },
 };
 
 export const viewport = {

@@ -54,7 +54,8 @@ export async function generateMetadata({ params }: Props) {
   const title = currentMeta?.title || siteMetadata.home.title;
   const description = currentMeta?.description || siteMetadata.home.description;
   const rawImage = currentMeta?.image || '/about-preview.png';
-  const imageUrl = rawImage.startsWith('http') ? rawImage : `https://highrisedigital.io${rawImage}`;
+// Agar image local path hai, toh usko absolute URL bana do bina kisi Next.js wrapper ke
+const imageUrl = rawImage.startsWith('http') ? rawImage : `https://www.highrisedigital.io${rawImage}`;
 
   return {
     metadataBase: new URL('https://highrisedigital.io'),

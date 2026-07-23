@@ -1,9 +1,36 @@
 import { siteMetadata } from "@/app/constants/metadata";
 
-// 🔴 1. Spaces khatam kar diye key ke andar se
-export const metadata = siteMetadata["case-studies"];
+const meta = siteMetadata["case-studies"] as any;
+const imageUrl = `https://www.highrisedigital.io${meta?.image || '/about-preview.png'}`;
 
-// 🔴 2. Function ka naam 'CaseStudiesLayout' kar diya (Dash hata kar camelCase kiya)
+export const metadata = {
+  title: meta?.title,
+  description: meta?.description,
+  openGraph: {
+    title: meta?.title,
+    description: meta?.description,
+    url: 'https://www.highrisedigital.io/case-studies',
+    siteName: 'High Rise Digital',
+    images: [
+      {
+        url: imageUrl,
+        width: 1200,
+        height: 630,
+        alt: meta?.title,
+        type: 'image/png',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: meta?.title,
+    description: meta?.description,
+    images: [imageUrl],
+  },
+};
+
 export default function CaseStudiesLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }

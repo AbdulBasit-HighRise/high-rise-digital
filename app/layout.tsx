@@ -28,6 +28,29 @@ export const metadata = {
   icons: {
     icon: "/icon.svg",
   },
+  // 👇 Yahan feature / social share image add hoti hai
+  openGraph: {
+    title: siteMetadata.home.title,
+    description: siteMetadata.home.description,
+    url: 'https://highrisedigital.io',
+    siteName: 'High Rise Digital',
+    images: [
+      {
+        url: 'https://highrisedigital.io/about-preview.png', // Apni feature image ka path yahan dein (public folder mein honi chahiye)
+        width: 1200,
+        height: 630,
+        alt: siteMetadata.home.title,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteMetadata.home.title,
+    description: siteMetadata.home.description,
+    images: ['/about-preview.png'], // Twitter/X ke liye bhi same image
+  },
 };
 
 export const viewport = {
@@ -48,24 +71,24 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`scroll-smooth ${inter.variable} ${instrumentSans.variable}`}
     >
-    <head>
-  {/* Google Site Verification Code */}
-  <meta name="google-site-verification" content="PXrBiu2VA4D2pHIyKKw6TA9d_Qkn2CJ1pCPyFYH5UAQ" />
+      <head>
+        {/* Google Site Verification Code */}
+        <meta name="google-site-verification" content="PXrBiu2VA4D2pHIyKKw6TA9d_Qkn2CJ1pCPyFYH5UAQ" />
 
-  {/* Google Analytics Scripts */}
-  <Script
-    src="https://www.googletagmanager.com/gtag/js?id=G-GC1MBVHBW7"
-    strategy="afterInteractive"
-  />
-  <Script id="google-analytics" strategy="afterInteractive">
-    {`
+        {/* Google Analytics Scripts */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GC1MBVHBW7"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-GC1MBVHBW7');
     `}
-  </Script>
-</head>
+        </Script>
+      </head>
       <body
         className="bg-[#111827] text-white antialiased overflow-x-hidden selection:bg-blue-600/30"
         suppressHydrationWarning

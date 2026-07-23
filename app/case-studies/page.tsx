@@ -17,7 +17,7 @@ export const projects = [
     slug: "femme-propre",
     title: " Femme Propre",
     category: "web",
-    image: "/femme.png",
+    image: "/home-cleaning.png",
     liveUrl: "https://www.femmepropre.co.uk/"
   },
   {
@@ -31,7 +31,7 @@ export const projects = [
     slug: "insaneperfumes",
     title: "Insane Perfumes",
     category: "web",
-    image: "/insameperfumes.png",
+    image: "/imsamme-perfume.png",
     liveUrl: "https://insaneperfumes.com/"
   },
   {
@@ -231,89 +231,89 @@ export default function PortfolioPage() {
 
       {/* 🎯 PREMIUM 3-COLUMN LUXURY BENTO GRID (WIDE SCALE) */}
       {/* 🎯 FIXED: Max-width ko 1920px kiya hai taake container bada ho, aur padding horizontal adjust ki hai */}
-    <section className="w-full px-4 sm:px-6 md:px-12 2xl:px-16 max-w-[1400px] 2xl:max-w-[1950px] 3xl:max-w-[1920px] mx-auto relative z-20 py-12">
-  <motion.div
-    layout
-    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 2xl:gap-12 w-full"
-  >
-    <AnimatePresence mode="popLayout">
-      {filtered.map((item) => {
-        const isWeb = item.category === "web";
+      <section className="w-full px-4 sm:px-6 md:px-12 2xl:px-16 max-w-[1400px] 2xl:max-w-[1950px] 3xl:max-w-[1920px] mx-auto relative z-20 py-12">
+        <motion.div
+          layout
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 2xl:gap-12 w-full"
+        >
+          <AnimatePresence mode="popLayout">
+            {filtered.map((item) => {
+              const isWeb = item.category === "web";
 
-        const CardContent = (
-          <motion.div
-            layout
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
-            className="w-full flex flex-col group cursor-pointer relative"
-          >
-            {/* BIG IMAGE CONTAINER (No Card Box, Pure Picture Focus) */}
-          <div className="w-full aspect-[16/10] sm:aspect-[16/9.5] rounded-3xl overflow-hidden relative mb-4 bg-transparent">
-  <Image
-    src={item.image}
-    alt={item.title}
-    fill
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-    className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-125 scale-110"
-    priority
-  />
+              const CardContent = (
+                <motion.div
+                  layout
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
+                  className="w-full flex flex-col group cursor-pointer relative"
+                >
+                  {/* BIG IMAGE CONTAINER (No Card Box, Pure Picture Focus) */}
+                  <div className="w-full aspect-[16/10] sm:aspect-[16/9.5] rounded-3xl overflow-hidden relative mb-4 bg-transparent">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-125 scale-110"
+                      priority
+                    />
 
-  {/* LUXURY CATEGORY BADGE */}
-  <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md border border-white/10 rounded-full px-3.5 py-1.5 flex items-center gap-2 z-10">
-    <span
-      className={`w-2 h-2 rounded-full animate-pulse ${
-        item.category === "web"
-          ? "bg-cyan-400 shadow-[0_0_8px_#22d3ee]"
-          : item.category === "seo"
-          ? "bg-blue-400 shadow-[0_0_8px_#60a5fa]"
-          : "bg-purple-400 shadow-[0_0_8px_#c084fc]"
-      }`}
-    />
-    <span className="text-[10px] uppercase tracking-widest font-black text-white/90">
-      {item.category}
-    </span>
-  </div>
-</div>
+                    {/* LUXURY CATEGORY BADGE */}
+                    <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md border border-white/10 rounded-full px-3.5 py-1.5 flex items-center gap-2 z-10">
+                      <span
+                        className={`w-2 h-2 rounded-full animate-pulse ${item.category === "web"
+                            ? "bg-cyan-400 shadow-[0_0_8px_#22d3ee]"
+                            : item.category === "seo"
+                              ? "bg-blue-400 shadow-[0_0_8px_#60a5fa]"
+                              : "bg-purple-400 shadow-[0_0_8px_#c084fc]"
+                          }`}
+                      />
+                      <span className="text-[10px] uppercase tracking-widest font-black text-white/90">
+                        {item.category}
+                      </span>
+                    </div>
+                  </div>
 
-            {/* TITLE & ACTION BELOW THE IMAGE */}
-            <div className="w-full px-1">
-              <div className="flex items-start justify-between gap-4">
-                <h3 className="text-xl sm:text-2xl 2xl:text-3xl font-bold tracking-normal text-white group-hover:text-cyan-400 transition-colors duration-300 leading-snug">
-                  {item.title}
-                </h3>
+                  {/* TITLE & ACTION BELOW THE IMAGE */}
+                  <div className="px-1 w-full">
+                    <div className="flex items-center justify-start gap-3">
+                      {/* Title */}
+                      <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-normal text-white group-hover:text-cyan-400 transition-colors duration-300 leading-snug">
+                        {item.title}
+                      </h3>
 
-                {/* Arrow Icon Button */}
-                <div className="w-10 h-10 2xl:w-12 2xl:h-12 rounded-full bg-white/[0.05] border border-white/10 flex items-center justify-center text-zinc-400 group-hover:text-cyan-400 group-hover:bg-cyan-500/10 group-hover:border-cyan-500/40 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 shrink-0 mt-0.5">
-                  {isWeb && item.liveUrl ? (
-                    <ExternalLink className="w-4 h-4 2xl:w-5 2xl:h-5" />
-                  ) : (
-                    <ArrowUpRight className="w-4 h-4 2xl:w-5 2xl:h-5" />
-                  )}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        );
+                      {/* Arrow Icon Button - Ab yeh text ke bilkul sath aur centered hoga */}
+                      <div className="w-8 h-8 2xl:w-10 2xl:h-10 rounded-full bg-white/[0.05] border border-white/10 flex items-center justify-center text-zinc-400 group-hover:text-cyan-400 group-hover:bg-cyan-500/10 group-hover:border-cyan-500/40 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 shrink-0">
+                        {isWeb && item.liveUrl ? (
+                          <ExternalLink className="w-3.5 h-3.5 2xl:w-4 2xl:h-4" />
+                        ) : (
+                          <ArrowUpRight className="w-3.5 h-3.5 2xl:w-4 2xl:h-4" />
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              );
 
-        if (isWeb && item.liveUrl) {
-          return (
-            <a href={item.liveUrl} key={item.slug} target="_blank" rel="noopener noreferrer" className="block h-full">
-              {CardContent}
-            </a>
-          );
-        }
+              if (isWeb && item.liveUrl) {
+                return (
+                  <a href={item.liveUrl} key={item.slug} target="_blank" rel="noopener noreferrer" className="block h-full">
+                    {CardContent}
+                  </a>
+                );
+              }
 
-        return (
-          <Link href={`/case-studies/${item.slug}`} key={item.slug} className="block h-full">
-            {CardContent}
-          </Link>
-        );
-      })}
-    </AnimatePresence>
-  </motion.div>
-</section>
+              return (
+                <Link href={`/case-studies/${item.slug}`} key={item.slug} className="block h-full">
+                  {CardContent}
+                </Link>
+              );
+            })}
+          </AnimatePresence>
+        </motion.div>
+      </section>
 
     </main>
   );

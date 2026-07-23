@@ -27,7 +27,7 @@ export const metadata = {
   icons: {
     icon: "/icon.svg",
   },
- openGraph: {
+openGraph: {
   title: siteMetadata.home.title,
   description: siteMetadata.home.description,
   url: 'https://highrisedigital.io',
@@ -42,6 +42,10 @@ export const metadata = {
   ],
   locale: 'en_US',
   type: 'website',
+},
+// 👇 Yeh optional property add kar sakte hain agar app ID ho
+other: {
+  'fb:app_id': 'YOUR_FACEBOOK_APP_ID',
 },
   twitter: {
     card: 'summary_large_image',

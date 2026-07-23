@@ -135,7 +135,7 @@ export default function RootLayout({
       >
         <CustomCursor />
         <Navbar />
-        <main className="relative z-10 min-h-screen w-full max-w-[2560px] mx-auto">
+        <main className="relative z-10 min-h-screen w-full max-w-[2660px] mx-auto">
           {children}
         </main>
         <Footer />

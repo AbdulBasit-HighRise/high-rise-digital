@@ -19,73 +19,36 @@ const inter = Inter({
   weight: ["400", "500", "600"],      // 🎯 Fix: pure strings pass kiye
   display: "swap",
 });
-
-type Props = {
-  params: Promise<{ slug?: string[] }>;
+export const metadata = {
+  metadataBase: new URL('https://highrisedigital.io'),
+  title: "Trusted Digital Marketing Agency | Online Growth Solutions",
+  description: "Grow your business with our expert digital marketing agency. We offer SEO, web, and content marketing strategies that drive measurable results.",
+  icons: {
+    icon: "/icon.svg",
+  },
+  openGraph: {
+    title: "Trusted Digital Marketing Agency | Online Growth Solutions",
+    description: "Grow your business with our expert digital marketing agency. We offer SEO, web, and content marketing strategies that drive measurable results.",
+    url: 'https://highrisedigital.io',
+    siteName: 'High Rise Digital',
+    images: [
+      {
+        url: 'https://highrisedigital.io/about-preview.png',
+        width: 1200,
+        height: 630,
+        alt: "Trusted Digital Marketing Agency",
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Trusted Digital Marketing Agency | Online Growth Solutions",
+    description: "Grow your business with our expert digital marketing agency. We offer SEO, web, and content marketing strategies that drive measurable results.",
+    images: ['/about-preview.png'],
+  },
 };
-
-export async function generateMetadata({ params }: Props) {
-  const resolvedParams = await params;
-  const slugs = resolvedParams.slug || [];
-  
-  // Current route ke mutabiq metadata nikalna
-  let currentMeta: any = siteMetadata.home;
-
-  if (slugs.length === 1) {
-    const key = slugs[0];
-    if (siteMetadata[key]) {
-      currentMeta = siteMetadata[key];
-    } else if (siteMetadata.services && (siteMetadata.services as any)[key]) {
-      currentMeta = (siteMetadata.services as any)[key];
-    }
-  } else if (slugs.length === 2 && slugs[0] === 'services') {
-    const serviceKey = slugs[1];
-    if (siteMetadata.services && (siteMetadata.services as any)[serviceKey]) {
-      currentMeta = (siteMetadata.services as any)[serviceKey];
-    }
-  } else if (slugs.length === 2 && (slugs[0] === 'case-studies' || slugs[0] === ' case-studies ')) {
-    const caseStudyKey = slugs[1];
-    const caseStudiesObj = siteMetadata["case-studies"] || siteMetadata[" case-studies "];
-    if (caseStudiesObj && (caseStudiesObj as any)[caseStudyKey]) {
-      currentMeta = (caseStudiesObj as any)[caseStudyKey];
-    }
-  }
-
-  const title = currentMeta?.title || siteMetadata.home.title;
-  const description = currentMeta?.description || siteMetadata.home.description;
-  const image = currentMeta?.image || '/about-preview.png';
-
-  return {
-    metadataBase: new URL('https://highrisedigital.io'),
-    title: title,
-    description: description,
-    icons: {
-      icon: "/icon.svg",
-    },
-    openGraph: {
-      title: title,
-      description: description,
-      url: 'https://highrisedigital.io',
-      siteName: 'High Rise Digital',
-      images: [
-        {
-          url: image.startsWith('http') ? image : `https://highrisedigital.io${image}`,
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
-      locale: 'en_US',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: title,
-      description: description,
-      images: [image.startsWith('http') ? image : `https://highrisedigital.io${image}`],
-    },
-  };
-}
 
 export const viewport = {
   width: "device-width",

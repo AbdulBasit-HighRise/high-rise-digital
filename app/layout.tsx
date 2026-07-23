@@ -27,22 +27,22 @@ export const metadata = {
   icons: {
     icon: "/icon.svg",
   },
-  openGraph: {
-    title: siteMetadata.home.title,
-    description: siteMetadata.home.description,
-    url: 'https://highrisedigital.io',
-    siteName: 'High Rise Digital',
-    images: [
-      {
-        url: 'https://highrisedigital.io/about-preview.png',
-        width: 1200,
-        height: 630,
-        alt: siteMetadata.home.title,
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
+ openGraph: {
+  title: siteMetadata.home.title,
+  description: siteMetadata.home.description,
+  url: 'https://highrisedigital.io',
+  siteName: 'High Rise Digital',
+  images: [
+    {
+      url: 'https://highrisedigital.io/about-preview.png',
+      width: 1200,
+      height: 630,
+      alt: siteMetadata.home.title,
+    },
+  ],
+  locale: 'en_US',
+  type: 'website',
+},
   twitter: {
     card: 'summary_large_image',
     title: siteMetadata.home.title,

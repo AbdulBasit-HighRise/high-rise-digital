@@ -55,10 +55,9 @@ export async function generateMetadata({ params }: Props) {
   const description = currentMeta?.description || siteMetadata.home.description;
   const rawImage = currentMeta?.image || '/about-preview.png';
   
-  // Absolute URL generation without Next.js optimization wrapper
-  const imageUrl = rawImage.startsWith('http') 
-    ? rawImage 
-    : `https://www.highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
+  // 🎯 Clean absolute URL generation with explicit slash check (Single & Final declaration)
+  const cleanPath = rawImage.startsWith('/') ? rawImage : `/${rawImage}`;
+  const imageUrl = rawImage.startsWith('http') ? rawImage : `https://www.highrisedigital.io${cleanPath}`;
 
   return {
     metadataBase: new URL('https://www.highrisedigital.io'),

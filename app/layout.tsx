@@ -19,24 +19,27 @@ const inter = Inter({
   weight: ["400", "500", "600"],      // 🎯 Fix: pure strings pass kiye
   display: "swap",
 });
+
 export const metadata = {
+  // 🎯 FIXED: Domain mismatch theek kar diya (.io set kiya taake sitemap se match ho)
   metadataBase: new URL('https://highrisedigital.io'),
-  title: "Trusted Digital Marketing Agency | Online Growth Solutions",
-  description: "Grow your business with our expert digital marketing agency. We offer SEO, web, and content marketing strategies that drive measurable results.",
+  title: siteMetadata.home.title,
+  description: siteMetadata.home.description,
   icons: {
     icon: "/icon.svg",
   },
+  // 👇 Yahan feature / social share image add hoti hai
   openGraph: {
-    title: "Trusted Digital Marketing Agency | Online Growth Solutions",
-    description: "Grow your business with our expert digital marketing agency. We offer SEO, web, and content marketing strategies that drive measurable results.",
+    title: siteMetadata.home.title,
+    description: siteMetadata.home.description,
     url: 'https://highrisedigital.io',
     siteName: 'High Rise Digital',
     images: [
       {
-        url: 'https://highrisedigital.io/about-preview.png',
+        url: 'https://highrisedigital.io/about-preview.png', // Apni feature image ka path yahan dein (public folder mein honi chahiye)
         width: 1200,
         height: 630,
-        alt: "Trusted Digital Marketing Agency",
+        alt: siteMetadata.home.title,
       },
     ],
     locale: 'en_US',
@@ -44,9 +47,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Trusted Digital Marketing Agency | Online Growth Solutions",
-    description: "Grow your business with our expert digital marketing agency. We offer SEO, web, and content marketing strategies that drive measurable results.",
-    images: ['/about-preview.png'],
+    title: siteMetadata.home.title,
+    description: siteMetadata.home.description,
+    images: ['/about-preview.png'], // Twitter/X ke liye bhi same image
   },
 };
 

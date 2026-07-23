@@ -24,7 +24,7 @@ type Props = {
   params: Promise<{ slug?: string[] }>;
 };
 
-// 🎯 Dynamic Metadata Generator
+// 🎯 100% Robust Dynamic Metadata Generator
 export async function generateMetadata({ params }: Props) {
   const resolvedParams = await params;
   const slugs = resolvedParams?.slug || [];
@@ -38,16 +38,18 @@ export async function generateMetadata({ params }: Props) {
     } else if (siteMetadata.services && (siteMetadata.services as any)[key]) {
       currentMeta = (siteMetadata.services as any)[key];
     }
-  } else if (slugs.length === 2 && slugs[0] === 'services') {
-    const serviceKey = slugs[1];
-    if (siteMetadata.services && (siteMetadata.services as any)[serviceKey]) {
-      currentMeta = (siteMetadata.services as any)[serviceKey];
-    }
-  } else if (slugs.length === 2 && (slugs[0] === 'case-studies' || slugs[0] === ' case-studies ')) {
-    const caseStudyKey = slugs[1];
-    const caseStudiesObj = siteMetadata["case-studies"] || siteMetadata[" case-studies "];
-    if (caseStudiesObj && (caseStudiesObj as any)[caseStudyKey]) {
-      currentMeta = (caseStudiesObj as any)[caseStudyKey];
+  } else if (slugs.length >= 2) {
+    if (slugs[0] === 'services') {
+      const serviceKey = slugs[1];
+      if (siteMetadata.services && (siteMetadata.services as any)[serviceKey]) {
+        currentMeta = (siteMetadata.services as any)[serviceKey];
+      }
+    } else if (slugs[0] === 'case-studies' || slugs[0] === ' case-studies ') {
+      const caseStudyKey = slugs[1];
+      const caseStudiesObj = siteMetadata["case-studies"] || siteMetadata[" case-studies "];
+      if (caseStudiesObj && (caseStudiesObj as any)[caseStudyKey]) {
+        currentMeta = (caseStudiesObj as any)[caseStudyKey];
+      }
     }
   }
 
@@ -55,7 +57,6 @@ export async function generateMetadata({ params }: Props) {
   const description = currentMeta?.description || siteMetadata.home.description;
   const rawImage = currentMeta?.image || '/about-preview.png';
   
-  // 🎯 Clean absolute URL generation with explicit slash check (Single & Final declaration)
   const cleanPath = rawImage.startsWith('/') ? rawImage : `/${rawImage}`;
   const imageUrl = rawImage.startsWith('http') ? rawImage : `https://www.highrisedigital.io${cleanPath}`;
 
@@ -77,7 +78,7 @@ export async function generateMetadata({ params }: Props) {
           width: 1200,
           height: 630,
           alt: title,
-          type: 'image/png',
+          type: imageUrl.endsWith('.webp') ? 'image/webp' : imageUrl.endsWith('.jpg') ? 'image/jpeg' : 'image/png',
         },
       ],
       locale: 'en_US',

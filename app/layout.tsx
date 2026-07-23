@@ -24,7 +24,7 @@ type Props = {
   params: Promise<{ slug?: string[] }>;
 };
 
-// 🎯 Dynamic Metadata Generator jo siteMetadata se automatically image aur text uthaye ga
+// 🎯 Dynamic Metadata Generator
 export async function generateMetadata({ params }: Props) {
   const resolvedParams = await params;
   const slugs = resolvedParams?.slug || [];
@@ -54,11 +54,14 @@ export async function generateMetadata({ params }: Props) {
   const title = currentMeta?.title || siteMetadata.home.title;
   const description = currentMeta?.description || siteMetadata.home.description;
   const rawImage = currentMeta?.image || '/about-preview.png';
-// Agar image local path hai, toh usko absolute URL bana do bina kisi Next.js wrapper ke
-const imageUrl = rawImage.startsWith('http') ? rawImage : `https://www.highrisedigital.io${rawImage}`;
+  
+  // Absolute URL generation without Next.js optimization wrapper
+  const imageUrl = rawImage.startsWith('http') 
+    ? rawImage 
+    : `https://www.highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
 
   return {
-    metadataBase: new URL('https://highrisedigital.io'),
+    metadataBase: new URL('https://www.highrisedigital.io'),
     title: title,
     description: description,
     icons: {
@@ -67,7 +70,7 @@ const imageUrl = rawImage.startsWith('http') ? rawImage : `https://www.highrised
     openGraph: {
       title: title,
       description: description,
-      url: 'https://highrisedigital.io',
+      url: 'https://www.highrisedigital.io',
       siteName: 'High Rise Digital',
       images: [
         {
@@ -75,6 +78,7 @@ const imageUrl = rawImage.startsWith('http') ? rawImage : `https://www.highrised
           width: 1200,
           height: 630,
           alt: title,
+          type: 'image/png',
         },
       ],
       locale: 'en_US',

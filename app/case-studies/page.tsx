@@ -264,10 +264,10 @@ export default function PortfolioPage() {
                     <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md border border-white/10 rounded-full px-3.5 py-1.5 flex items-center gap-2 z-10">
                       <span
                         className={`w-2 h-2 rounded-full animate-pulse ${item.category === "web"
-                            ? "bg-cyan-400 shadow-[0_0_8px_#22d3ee]"
-                            : item.category === "seo"
-                              ? "bg-blue-400 shadow-[0_0_8px_#60a5fa]"
-                              : "bg-purple-400 shadow-[0_0_8px_#c084fc]"
+                          ? "bg-cyan-400 shadow-[0_0_8px_#22d3ee]"
+                          : item.category === "seo"
+                            ? "bg-blue-400 shadow-[0_0_8px_#60a5fa]"
+                            : "bg-purple-400 shadow-[0_0_8px_#c084fc]"
                           }`}
                       />
                       <span className="text-[10px] uppercase tracking-widest font-black text-white/90">
@@ -278,14 +278,14 @@ export default function PortfolioPage() {
 
                   {/* TITLE & ACTION BELOW THE IMAGE */}
                   <div className="px-1 w-full">
-                    <div className="flex items-center justify-start gap-3">
+                    <div className="flex items-start justify-between gap-4 w-full">
                       {/* Title */}
                       <h3 className="text-base sm:text-lg 2xl:text-xl font-bold tracking-normal text-white group-hover:text-cyan-400 transition-colors duration-300 leading-snug">
                         {item.title}
                       </h3>
 
-                      {/* Arrow Icon Button - Ab yeh text ke bilkul sath aur centered hoga */}
-                      <div className="w-8 h-8 2xl:w-10 2xl:h-10 rounded-full bg-white/[0.05] border border-white/10 flex items-center justify-center text-zinc-400 group-hover:text-cyan-400 group-hover:bg-cyan-500/10 group-hover:border-cyan-500/40 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 shrink-0">
+                      {/* Arrow Icon Button - Manually Centered with Margin */}
+                      <div className="mt-1 w-8 h-8 2xl:w-10 2xl:h-10 rounded-full bg-white/[0.05] border border-white/10 flex items-center justify-center text-zinc-400 group-hover:text-cyan-400 group-hover:bg-cyan-500/10 group-hover:border-cyan-500/40 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 shrink-0">
                         {isWeb && item.liveUrl ? (
                           <ExternalLink className="w-3.5 h-3.5 2xl:w-4 2xl:h-4" />
                         ) : (

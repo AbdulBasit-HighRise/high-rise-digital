@@ -35,7 +35,7 @@ export const projects = [
     liveUrl: "https://insaneperfumes.com/"
   },
   {
-    slug: "toddlert",
+    slug: "toddler",
     title: "Toddlert",
     category: "web",
     image: "/toddlert.png",
@@ -64,13 +64,13 @@ export const projects = [
     image: "/zaiqa.png",
     liveUrl: "https://zaiqahroyale.com/"
   },
-  {
-    slug: "nordic-socks",
-    title: "Nordic Socks",
-    category: "web",
-    image: "/nordic-socks.png",
-    liveUrl: "https://www.nordicsocks.com/"
-  },
+  // {
+  //   slug: "nordic-socks",
+  //   title: "Nordic Socks",
+  //   category: "web",
+  //   image: "/nordic-socks.png",
+  //   liveUrl: "https://www.nordicsocks.com/"
+  // },
   {
     slug: "rugs-and-carpets",
     title: "Rugs and Carpets",
@@ -89,25 +89,25 @@ export const projects = [
 
   // --- SEO PERFORMANCE CAMPAIGNS (6 Projects) ---
   {
-    slug: "nordic-socks-28-organic-traffic",
+    slug: "170-leads-increased-for-roofing-company",
     title: "nordic-socks 28% Organic Traffic.",
     category: "seo",
     image: "/nordic-socks.png"
   },
   {
-    slug: "real-estate-company-achieved-1000-leads-in-3-months-with-seo",
+    slug: "11-total-sales-revenue-increased-for-oral-care-brand",
     title: "Real Estate Company Achieved 1,000+ Leads In 3 Months With SEO",
     category: "seo",
     image: "/real-estate.png"
   },
   {
-    slug: "marketing-agency-generated-1.76k-leads-in-3-months",
+    slug: "28-organic-traffic-increase-for-local-cleaning-company",
     title: "Marketing Agency Generated 1.76K Leads In 3 Months",
     category: "seo",
     image: "/social-status.png"
   },
   {
-    slug: "fitness-brand-seo-case-study",
+    slug: "6.69K-clicks-in-just-3-months-for-local-restaurant",
     title: "Fitness Brand SEO Case Study: 1,000+ Leads in 3 Months",
     category: "seo",
     image: "/fitness-brand.png"

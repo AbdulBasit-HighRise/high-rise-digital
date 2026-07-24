@@ -16,7 +16,7 @@ const awardLogos = [
   { src: "/webflow.webp", alt: "National Excellence" },
   { src: "/weebly.png", alt: "Top 10 Agency" },
   { src: "/WIX.png", alt: "Forbes Member" }, // Iska bhi check kar lena agar live par masla kare toh 'wix.png' kar dena
-  
+
   // 🎯 FIXED: Pure Lowercase paths dhal diye hain
   { src: "/Wordpress-logo.png", alt: "Clutch Recognition" },
   { src: "/shopify-logo.webp", alt: "The Manifest" },
@@ -59,34 +59,30 @@ const features = [
   },
 ];
 const bentoProjects = [
-  // {
-  //   id: "01",
-  //   title: "RMC Roofing", // 🎯 Spelling fixed: Roofin -> Roofing
-  //   image: "/web1.jpg",
-  //   slug: "https://rhinoroofingorlando.com/",
-  //   size: "lg:col-span-2 h-[400px] 2xl:h-[500px]",
-  // },
+  {
+    id: "01",
+    title: "Rugs and Carpets",
+    image: "/rugs-carpet.png",
+    slug: "https://rugsandcarpets.ae/",
+  },
   {
     id: "02",
-    title: "Zaiqah Royale",
-    image: "/web9.jpg",
-    slug: "https://zaiqahroyale.com/",
-    size: "lg:col-span-1 h-[400px] 2xl:h-[500px]",
+    title: "Nordic Socks",
+    image: "/nordic-socks.png",
+    slug: "https://www.nordicsocks.com/",
   },
   {
     id: "03",
-    title: "Car Recovery London",
-    image: "/web8.jpg",
-    slug: "https://carsrecoverylondon.com/",
-    size: "lg:col-span-1 h-[400px] 2xl:h-[500px]",
+    title: "Zaiqah Royale",
+    image: "/imsamme-perfume.png",
+    slug: "https://insaneperfumes.com/",
   },
-  // {
-  //   id: "04",
-  //   title: "Channel1",
-  //   image: "/web3.jpg",
-  //   slug: "https://channel1.com.au/",
-  //   size: "lg:col-span-2 h-[400px] 2xl:h-[500px]",
-  // }
+  {
+    id: "04",
+    title: "The Beauty Station",
+    image: "/beauti-station.png",
+    slug: "https://thebeautystation.com/",
+  },
 ];
 import { Search, PenTool, Rocket, ShieldCheck, } from "lucide-react";
 
@@ -380,7 +376,7 @@ export default function WebDevPage() {
         {/* Background Glows */}
         <div className="absolute top-1/3 left-1/4 w-[600px] 2xl:w-[1000px] h-[600px] bg-blue-600/[0.02] blur-[150px] pointer-events-none" />
 
-        <div className="relative z-10 max-w-7xl 2xl:max-w-[110rem] mx-auto px-6">
+        <div className="relative z-10 w-full px-6 max-w-[1400px] mx-auto">
 
           {/* HEADER BLOCK */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-10 2xl:mb-16 border-b border-white/5 pb-4 pt-0">
@@ -391,7 +387,7 @@ export default function WebDevPage() {
               transition={{ duration: 0.5 }}
               className="text-left"
             >
-              <h3 className="text-[1.8rem] md:text-[2.5rem] lg:text-[2.5rem] 2xl:text-[3.2rem] font-black tracking-tighter leading-[1.1] lg:leading-none text-white">
+              <h3 className="text-[1.8rem] md:text-[2.5rem] lg:text-[2.5rem] 2xl:text-[3.2rem] font-black tracking-tight leading-[1.1] lg:leading-none text-white">
                 Featured{" "}
                 <span className=" bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
                   Website Design Projects
@@ -412,7 +408,7 @@ export default function WebDevPage() {
             >
               <Link
                 href="/case-studies"
-                className="flex items-center gap-3 md:gap-4 text-[14px] md:text-xs 2xl:text-[13px] uppercase tracking-[0.25em] font-black text-white-500 hover:text-white transition-all duration-500 group"
+                className="flex items-center gap-3 md:gap-4 text-[14px] md:text-xs 2xl:text-[13px] uppercase tracking-[0.25em] font-black text-white hover:text-white transition-all duration-500 group"
               >
                 <span className="relative pb-1 transition-colors duration-500 group-hover:text-white">
                   View All Projects
@@ -422,57 +418,56 @@ export default function WebDevPage() {
                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-cyan-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <ArrowUpRight
                     size={16}
-                    className="text-zinc-500 group-hover:text-white group-hover:rotate-45 group-hover:scale-110 transform transition-all duration-500 2xl:w-5 2xl:h-5"
+                    className="text-zinc-400 group-hover:text-white group-hover:rotate-45 group-hover:scale-110 transform transition-all duration-500 2xl:w-5 2xl:h-5"
                   />
                 </div>
               </Link>
             </motion.div>
           </div>
 
-          {/* BENTO GRID */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-8 relative z-10">
+          {/* 2 CARDS PER ROW GRID */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 2xl:gap-8 relative z-10 w-full">
             {bentoProjects.map((project, i) => {
               const CardWrapper = motion.div;
 
               return (
-                // 🎯 FIXED: Converted to standard anchor <a> tag with target="_blank" for flawless external routing
                 <a
                   href={project.slug}
                   key={project.id}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${project.size} block`}
+                  className="block w-full"
                 >
                   <CardWrapper
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: i * 0.1 }}
                     viewport={{ once: true }}
-                    className="w-full h-full group relative rounded-[2rem] 2xl:rounded-[4rem] border border-white/5 bg-gradient-to-b from-white/[0.02] to-transparent backdrop-blur-md flex flex-col justify-between overflow-hidden hover:border-blue-500/30 transition-all duration-500 cursor-pointer"
+                    className="w-full h-[280px] md:h-[340px] 2xl:h-[420px] group relative rounded-[1.5rem] 2xl:rounded-[2.5rem] bg-transparent flex flex-col justify-between overflow-hidden transition-all duration-500 cursor-pointer"
                   >
                     <div className="absolute inset-0 w-full h-full">
-                      {/* Next.js Image Element */}
+                      {/* Next.js Image Element without any shadow layer */}
                       <div className="absolute inset-0 w-full h-full transition-all duration-500">
                         <Image
                           src={project.image || "/placeholder.png"}
                           alt={project.title}
                           fill
                           sizes="(max-width: 1024px) 100vw, 50vw"
-                          className="object-cover group-hover:scale-105 transition-transform duration-700"
+                          className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                           priority={i < 2}
                         />
                       </div>
 
                       {/* Project ID Tag */}
-                      <div className="absolute top-8 left-8 z-20">
-                        <span className="px-3 py-1 rounded-full border border-white/10 bg-black/40 backdrop-blur-md text-[10px] 2xl:text-base font-bold text-gray-300 uppercase tracking-widest">
+                      <div className="absolute top-4 left-4 z-20">
+                        <span className="px-2.5 py-1 rounded-full border border-white/10 bg-black/50 backdrop-blur-md text-[9px] 2xl:text-xs font-bold text-gray-300 uppercase tracking-widest">
                           {project.id}
                         </span>
                       </div>
 
                       {/* Project Title Display */}
-                      <div className="absolute bottom-8 left-8 right-8 z-20 space-y-2">
-                        <span className="text-2xl 2xl:text-5xl font-black tracking-tight  block text-white bg-black/30 backdrop-blur-sm px-4 py-2 rounded-xl w-fit">
+                      <div className="absolute bottom-4 left-4 right-4 z-20">
+                        <span className="text-base md:text-lg 2xl:text-2xl font-black tracking-tight block text-white bg-black/60 backdrop-blur-md px-3.5 py-2 rounded-xl w-fit border border-white/10">
                           {project.title}
                         </span>
                       </div>
@@ -485,7 +480,6 @@ export default function WebDevPage() {
 
         </div>
       </section>
-
       <ServiceCTA />
 
       {/* process section  */}

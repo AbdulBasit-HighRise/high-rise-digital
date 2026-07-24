@@ -28,7 +28,7 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
   const resolvedParams = await params;
   const slugs = resolvedParams?.slug || [];
-  
+
   let currentMeta: any = siteMetadata.home;
 
   if (slugs.length === 1) {
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props) {
   const title = currentMeta?.title || siteMetadata.home.title;
   const description = currentMeta?.description || siteMetadata.home.description;
   const rawImage = currentMeta?.image || '/about-preview.png';
-  
+
   const cleanPath = rawImage.startsWith('/') ? rawImage : `/${rawImage}`;
   const imageUrl = rawImage.startsWith('http') ? rawImage : `https://www.highrisedigital.io${cleanPath}`;
 
@@ -135,7 +135,7 @@ export default function RootLayout({
       >
         <CustomCursor />
         <Navbar />
-        <main className="relative z-10 min-h-screen w-full max-w-[2660px] mx-auto">
+        <main className="min-h-screen w-full">
           {children}
         </main>
         <Footer />

@@ -113,7 +113,8 @@ export default function RootLayout({
     >
       <head>
         {/* Google Site Verification Code */}
-        <meta name="google-site-verification" content="PXrBiu2VA4D2pHIyKKw6TAG9d_Qkn2CJ1pCPyFYH5UAQ" />
+        <meta name="google-site-verification" content="GowGB5YqmsBvTssoftZxLtLt25Vv7aVCPPzFiUqDPvo" />
+
         {/* Google Analytics Scripts */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-GC1MBVHBW7"
@@ -121,11 +122,11 @@ export default function RootLayout({
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-GC1MBVHBW7');
-          `}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GC1MBVHBW7');
+    `}
         </Script>
       </head>
       <body

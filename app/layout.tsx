@@ -58,10 +58,10 @@ export async function generateMetadata({ params }: Props) {
   const rawImage = currentMeta?.image || '/about-preview.png';
 
   const cleanPath = rawImage.startsWith('/') ? rawImage : `/${rawImage}`;
-  const imageUrl = rawImage.startsWith('http') ? rawImage : `https://www.highrisedigital.io${cleanPath}`;
+  const imageUrl = rawImage.startsWith('http') ? rawImage : `https://highrisedigital.io${cleanPath}`;
 
   return {
-    metadataBase: new URL('https://www.highrisedigital.io'),
+    metadataBase: new URL('https://highrisedigital.io'),
     title: title,
     description: description,
     icons: {
@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: Props) {
     openGraph: {
       title: title,
       description: description,
-      url: 'https://www.highrisedigital.io',
+      url: 'https://highrisedigital.io',
       siteName: 'High Rise Digital',
       images: [
         {
@@ -113,8 +113,7 @@ export default function RootLayout({
     >
       <head>
         {/* Google Site Verification Code */}
-        <meta name="google-site-verification" content="PXrBiu2VA4D2pHIyKKw6TA9d_Qkn2CJ1pCPyFYH5UAQ" />
-
+        <meta name="google-site-verification" content="PXrBiu2VA4D2pHIyKKw6TAG9d_Qkn2CJ1pCPyFYH5UAQ" />
         {/* Google Analytics Scripts */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-GC1MBVHBW7"

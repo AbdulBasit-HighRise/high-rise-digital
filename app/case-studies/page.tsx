@@ -36,7 +36,7 @@ export const projects = [
   },
   {
     slug: "toddler",
-    title: "Toddlert",
+    title: "Toddler",
     category: "web",
     image: "/toddlert.png",
     liveUrl: "https://toddlertown.ae/"
@@ -64,13 +64,7 @@ export const projects = [
     image: "/zaiqa.png",
     liveUrl: "https://zaiqahroyale.com/"
   },
-  // {
-  //   slug: "nordic-socks",
-  //   title: "Nordic Socks",
-  //   category: "web",
-  //   image: "/nordic-socks.png",
-  //   liveUrl: "https://www.nordicsocks.com/"
-  // },
+
   {
     slug: "rugs-and-carpets",
     title: "Rugs and Carpets",
@@ -88,29 +82,37 @@ export const projects = [
 
 
   // --- SEO PERFORMANCE CAMPAIGNS (6 Projects) ---
-  {
-    slug: "170-leads-increased-for-roofing-company",
+ {
+    slug: "11-total-sales-revenue-increased-for-fastion-brand",
     title: "nordic-socks 28% Organic Traffic.",
     category: "seo",
-    image: "/nordic-socks.png"
+    image: "/nordic-socks.png",
+    metaTitle: "Nordic Socks Case Study | +28% Organic Traffic Growth",
+    metaDescription: "Discover how we scaled Nordic Socks' organic traffic by 28% and boosted overall eCommerce revenue through an advanced Shopify SEO framework."
   },
   {
-    slug: "11-total-sales-revenue-increased-for-oral-care-brand",
+    slug: "6.69K-clicks-in-just-3-months-for-real-estate",
     title: "Real Estate Company Achieved 1,000+ Leads In 3 Months With SEO",
     category: "seo",
-    image: "/real-estate.png"
+    image: "/real-estate.png",
+    metaTitle: "Real Estate SEO Case Study | 1,000+ Leads in 3 Months",
+    metaDescription: "Learn how our targeted local real estate SEO strategy helped a property agency generate over 1,000 qualified buyer and vendor leads in 90 days."
   },
   {
-    slug: "28-organic-traffic-increase-for-local-cleaning-company",
+    slug: "170-leads-increased-for-marketing-agency",
     title: "Marketing Agency Generated 1.76K Leads In 3 Months",
     category: "seo",
-    image: "/social-status.png"
+    image: "/social-status.png",
+    metaTitle: "Marketing Agency SEO Case Study | 1.76K+ Leads Generated",
+    metaDescription: "See how we transformed Social Status's digital footprint, driving an 850% organic traffic surge and 1.76K+ qualified marketing agency leads."
   },
   {
-    slug: "6.69K-clicks-in-just-3-months-for-local-restaurant",
+    slug: "28-organic-traffic-increase-for-fittness-brand",
     title: "Fitness Brand SEO Case Study: 1,000+ Leads in 3 Months",
     category: "seo",
-    image: "/fitness-brand.png"
+    image: "/fitness-brand.png",
+    metaTitle: "Fitness Brand SEO Case Study | 1,000+ Leads & 6.69K Clicks",
+    metaDescription: "Explore our fitness SEO success story delivering 1,000+ targeted gym and supplement leads through rapid technical optimization and high-intent content."
   },
 
   // --- SOCIAL MEDIA MARKETING PERFORMANCE ---
@@ -118,25 +120,33 @@ export const projects = [
     slug: "31-increase-in-qualified-property-leads-via-high-intent-social-funnels",
     title: "31% Increase In Qualified Property Leads Via High-Intent Social Funnels",
     category: "social",
-    image: "/s-property.png"
+    image: "/s-property.png",
+    metaTitle: "Real Estate Social Ads Case Study | +31% Property Leads",
+    metaDescription: "Discover how high-intent paid social media funnels scaled qualified property inquiries by 31% for our real estate development client."
   },
   {
     slug: "598541-in-sales-at-22x-roas-for-private-label-fitness-brand",
     title: "$598,541 In Sales At 22x ROAS For Private Label Fitness Brand Via High-Converting Funnels",
     category: "social",
-    image: "/s-gym.png"
+    image: "/s-gym.png",
+    metaTitle: "Fitness Brand Social Ads Case Study | $598K Sales at 22x ROAS",
+    metaDescription: "Learn how our direct-response paid social funnels generated $598,541 in revenue at a massive 22x ROAS for a private label fitness brand."
   },
   {
     slug: "1044-website-purchases-for-fashion-brand",
     title: "1,044 Website Purchases For Fashion Brand In 2 Months At 23.85x ROAS Via Direct-Response Funnels",
     category: "social",
-    image: "/s-fastion.png"
+    image: "/s-fastion.png",
+    metaTitle: "Fashion Brand Social Ads Case Study | 1,044 Purchases at 23.85x ROAS",
+    metaDescription: "See how targeted direct-response social media funnels delivered 1,044 transactions in just 2 months at an incredible 23.85x ROAS."
   },
   {
     slug: "25-10x-roas-for-home-living-brand",
     title: "25.10x ROAS For Home & Living Brand Via High-Converting Paid Social Funnels",
     category: "social",
-    image: "/s-home-living.png"
+    image: "/s-home-living.png",
+    metaTitle: "Home & Living Social Ads Case Study | 25.10x ROAS Generated",
+    metaDescription: "Explore our paid social media campaign strategy that unlocked a massive 25.10x ROAS for a leading home and living eCommerce brand."
   }
 ];
 

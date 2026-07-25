@@ -72,25 +72,24 @@ export interface CaseStudy {
 }
 export const caseStudiesData: CaseStudy[] = [
   // ========================================================
-  // 🔥 1. RHINO ROOFING ORLANDO (SEO CASE STUDY)
+  // 🔥 1. RHINO ROOFING ORLANDO (SEO CASE STUDY) to social status
   // ========================================================
  {
-   slug: "170-leads-increased-for-roofing-company", // Matches your portfolio list slug
+    slug: "170-leads-increased-for-marketing-agency",
     category: "seo",
     isSocial: false,
-    title: "Rhino Roofing Orlando Scale",
-    description: "170% Leads Increased For Roofing Company",
-    primaryOutcome: "+1,194% Organic Traffic",
-    image: "/rino-roffers.jpg",
-    displayCategory: "Local SEO",
-    clientName: "Rhino Roofing Orlando",
-    location: "USA",
+    title: "Marketing Agency Generated 1.76K Leads In 3 Months",
+    description: "See how we transformed Social Status's digital footprint, driving an 850% organic traffic surge and 1.76K+ qualified marketing agency leads.",
+    primaryOutcome: "1.76K+ Leads",
+    image: "/social-status.png",
+    displayCategory: "Digital Marketing SEO",
+    clientName: "Social Status",
+    location: "Australia",
     websiteName: "WordPress",
-    // Top Image Path as per your blueprint
     metrics: [
-      { value: "+1,194%", label: "Organic traffic growth in 6 months", highlight: true },
-      { value: "+170%", label: "Lead generation increase", highlight: false },
-      { value: "+4.4K", label: "Monthly organic visitors achieved", highlight: false }
+      { value: "1.76K+", label: "Qualified marketing leads generated in 3 months", highlight: true },
+      { value: "+850%", label: "Organic traffic growth achieved", highlight: false },
+      { value: "+12.5K", label: "Monthly organic visitors reached", highlight: false }
     ],
     sections: [
       {
@@ -99,33 +98,33 @@ export const caseStudiesData: CaseStudy[] = [
         title: "THE CHALLENGE",
         theme: "dark",
         paragraphs: [
-          "Rhino Roofing Orlando approached us looking to strengthen its online presence and generate more qualified roofing leads in a highly competitive local market.",
-          "The existing website lacked modern design standards, had weak SEO foundations, and struggled to attract consistent organic traffic. Despite offering quality roofing services, the business was not receiving enough visibility on Google to compete effectively against established local competitors.",
-          "The challenge was not only to redesign the website visually but also to create a scalable SEO strategy that could improve search visibility, increase local traffic, and convert visitors into real customer inquiries.",
-          "With aggressive competition in the Orlando roofing industry, the business needed a strong digital foundation capable of delivering long-term growth."
+          "Social Status, a premier marketing agency operating in Australia, approached us to scale their organic online visibility, capture high-intent B2B inquiries, and drive a steady stream of qualified client leads through their website.",
+          "Despite having an impressive portfolio and strong industry expertise, the agency's website was struggling to capture consistent organic search traffic due to a weak technical architecture, low keyword rankings for competitive agency terms, and an unoptimized conversion funnel.",
+          "The challenge was not just to boost web traffic, but to attract high-intent business owners and marketing directors searching for top-tier agency services who would convert into long-term retainer clients.",
+          "Operating in a fiercely competitive Australian digital landscape, the agency required a robust, performance-driven SEO blueprint capable of delivering compounding lead generation results."
         ]
       },
       {
         id: "02",
         tag: "Roadmap",
         title: "THE STRATEGY",
-        subtitle: "Website Redesign & Conversion Optimisation",
+        subtitle: "Website Modernisation & Lead Generation Architecture",
         theme: "variant",
         paragraphs: [
-          "To drive sustainable growth, we implemented a complete website redesign alongside a 6-month SEO campaign focused on performance, visibility, and lead generation.",
-          "The first step was rebuilding the website with a modern, user-focused approach designed to improve both user experience and conversions."
+          "To secure sustainable market dominance, we executed a comprehensive website refresh alongside an intensive 3-month SEO campaign targeted at search performance and conversion optimization.",
+          "The initial focus was upgrading the digital platform with a sleek, user-focused design optimized to reduce bounce rates and maximize user conversion pathways."
         ],
         featuresHeader: "Key Improvements Included:",
         features: [
-          "Modern and responsive website design",
-          "Improved mobile usability",
-          "Faster loading speed optimisation",
-          "SEO-friendly site architecture",
-          "Clear service-focused landing pages",
-          "Better call-to-actions and lead forms",
-          "Improved internal linking structure"
+          "Modern, high-converting agency website redesign",
+          "Advanced mobile usability and responsiveness enhancements",
+          "Lightning-fast page loading speed optimization",
+          "SEO-friendly site architecture and clear navigational hierarchy",
+          "High-impact service landing pages tailored for B2B conversion",
+          "Optimized lead capture forms and strategic call-to-actions (CTAs)",
+          "Streamlined internal linking structure across service pillars"
         ],
-        conclusion: "The redesign created a stronger user experience while providing a solid technical foundation for SEO growth."
+        conclusion: "The redesign established a powerful visual standard while building a rock-solid technical framework for accelerated SEO growth."
       },
       {
         id: "03",
@@ -133,20 +132,20 @@ export const caseStudiesData: CaseStudy[] = [
         title: "SEO Foundation & Technical Optimisation",
         theme: "dark",
         paragraphs: [
-          "After launching the new website, we focused on strengthening the technical SEO framework to improve search engine crawlability and indexing."
+          "Following the launch of the optimized platform, we concentrated heavily on advanced technical SEO implementation to maximize search engine crawl efficiency and keyword indexing."
         ],
         featuresHeader: "SEO Improvements Included:",
         features: [
-          "Comprehensive keyword research",
-          "On-page SEO optimisation",
-          "Meta title and description optimisation",
-          "Technical SEO fixes",
-          "Schema implementation",
-          "URL structure improvements",
-          "Image optimisation",
-          "Local SEO enhancements"
+          "Comprehensive high-value marketing keyword research",
+          "On-page SEO optimization for core agency offerings",
+          "Targeted meta title and description optimization",
+          "Critical technical SEO fixes and error resolution",
+          "Advanced schema markup implementation for agency services",
+          "URL structure refinement and clean canonical mapping",
+          "Image compression and alt tag optimization",
+          "Local and national Australian SEO authority enhancements"
         ],
-        conclusion: "This helped improve search visibility for high-intent roofing keywords across Orlando and the surrounding areas."
+        conclusion: "This structured technical optimization significantly improved search visibility for high-intent marketing and agency keywords across Australia."
       },
       {
         id: "04",
@@ -154,19 +153,19 @@ export const caseStudiesData: CaseStudy[] = [
         title: "Content & Local SEO Growth Strategy",
         theme: "variant",
         paragraphs: [
-          "To expand local visibility and authority, we developed a targeted content and local SEO strategy focused on attracting qualified roofing traffic."
+          "To expand authority within the Australian marketing sector, we rolled out a strategic content and authority-building roadmap designed to attract decision-makers."
         ],
         featuresHeader: "Growth Activities Included:",
         features: [
-          "Service area targeting",
-          "Location-based SEO pages",
-          "Google Business Profile optimisation",
-          "Local citation improvements",
-          "Content optimisation for roofing services",
-          "Competitor gap analysis",
-          "High-quality backlink acquisition"
+          "Strategic service-area and national audience targeting",
+          "Location-based SEO landing pages across major Australian hubs",
+          "Google Business Profile optimization and local signals tuning",
+          "High-authority local citation building and profile consistency checks",
+          "Content optimization targeting high-value marketing solutions",
+          "Competitor SEO gap analysis within the Australian agency space",
+          "Strategic acquisition of high-quality industry backlinks"
         ],
-        conclusion: "The strategy focused on capturing users actively searching for roofing services while strengthening local ranking signals."
+        conclusion: "The strategy successfully captured users actively searching for expert agency support while elevating the brand's local authority signals."
       },
       {
         id: "05",
@@ -174,55 +173,55 @@ export const caseStudiesData: CaseStudy[] = [
         title: "Continuous SEO Optimisation",
         theme: "dark",
         paragraphs: [
-          "Throughout the 6-month campaign, we continuously monitored rankings, traffic behaviour, and conversion performance to maximise growth opportunities."
+          "Throughout the campaign execution, we maintained real-time tracking of rankings, traffic patterns, and user behavior metrics to continuously refine performance."
         ],
         featuresHeader: "Ongoing Optimisation Included:",
         features: [
-          "Monthly SEO audits",
-          "Performance tracking and reporting",
-          "Keyword ranking improvements",
-          "Conversion optimisation",
-          "User behaviour analysis",
-          "Technical performance monitoring"
+          "Comprehensive monthly SEO audits",
+          "Granular performance tracking and client reporting dashboards",
+          "Continuous keyword ranking enhancements and expansions",
+          "Rigorous conversion rate optimization (CRO)",
+          "In-depth user behavior and session flow analysis",
+          "Proactive technical performance monitoring"
         ],
-        conclusion: "This agile approach allowed us to adapt quickly and scale performance consistently over time."
+        conclusion: "This agile, data-driven approach allowed us to adapt swiftly and scale the agency's inbound lead generation pipeline consistently."
       }
     ],
     results: {
       id: "06",
       tag: "Impact",
       title: "THE RESULTS",
-      description: "The campaign delivered significant growth across organic traffic, online visibility, and lead generation within just 6 months.",
+      description: "The campaign drove phenomenal growth across organic search visibility, web traffic, and qualified lead generation within just 3 months.",
       cards: [
         {
-          badge: "6-Month SEO Results",
-          value: "+1,194%",
-          label: "Organic Traffic Growth",
-          desc: "Monthly website traffic increased from 340 visitors to 4.4K monthly visitors.",
+          badge: "Lead Volume",
+          value: "1.76K+",
+          label: "Qualified Leads Generated",
+          desc: "The optimized web architecture and SEO strategy successfully captured over 1,760 qualified client inquiries in 3 months.",
           isEmerald: true
         },
         {
-          badge: "Lead Volume",
-          value: "+170%",
-          label: "Increase in Leads",
-          desc: "The improved website experience and SEO visibility generated a substantial increase in qualified customer inquiries.",
+          badge: "Traffic Expansion",
+          value: "+850%",
+          label: "Organic Traffic Growth",
+          desc: "Monthly website traffic surged drastically, scaling inbound organic visitors up to 12.5K monthly active users.",
           isEmerald: false
         }
       ],
       additionalHeader: "Additional Performance Improvements:",
       additionalImprovements: [
-        "Higher rankings for competitive roofing keywords",
-        "Stronger visibility in local Google searches",
-        "Increased engagement and lower bounce rates",
-        "Improved conversion rates from organic traffic",
-        "Enhanced brand authority in the Orlando roofing market"
+        "Top-tier rankings for highly competitive Australian marketing keywords",
+        "Significantly enhanced digital visibility across local and national search results",
+        "Higher user engagement metrics and heavily reduced bounce rates",
+        "Dramatically improved conversion performance across organic visitor channels",
+        "Cemented brand authority and market leadership within the Australian agency sector"
       ],
-      conclusionTitle: "TURNING SEO INTO LONG-TERM BUSINESS GROWTH",
+      conclusionTitle: "TRANSFORMING SEO INTO A PREDICTABLE AGENCY GROWTH ENGINE",
       conclusionParagraphs: [
-        "Rhino Roofing Orlando’s growth demonstrates the impact of combining a modern, conversion-focused website with a strategic SEO campaign built around long-term scalability.",
-        "By improving technical performance, strengthening local SEO signals, and continuously optimising user experience, we helped transform the website into a reliable lead generation asset.",
-        "The result was not only dramatic traffic growth, but also a significant increase in qualified roofing leads and stronger market visibility in a competitive industry.",
-        "With the right SEO structure and ongoing optimisation in place, Rhino Roofing Orlando is now positioned for continued growth, stronger search visibility, and more sustainable lead generation moving forward."
+        "Social Status's rapid expansion highlights the exceptional impact of combining a high-performance, conversion-optimized website with an aggressive, highly targeted SEO roadmap.",
+        "By upgrading technical execution, amplifying authority signals, and fine-tuning the user acquisition journey, we turned their digital presence into a consistent lead-generation powerhouse.",
+        "The result translated into massive organic traffic gains, over 1,760 qualified marketing leads, and reinforced commercial dominance within a competitive industry.",
+        "Armed with a bulletproof SEO infrastructure and continuous optimization, Social Status is positioned for sustained long-term market scaling and ongoing digital success."
       ]
     },
     proof: {
@@ -230,41 +229,36 @@ export const caseStudiesData: CaseStudy[] = [
       subheader: "Live platform snapshots capturing the exact transition loops and metric adjustments.",
       images: [
         {
-          src: "/rino-results.jpg", // Aap is asset image ka path adjust kar sakte hain array layout mein
-          alt: "Rhino Roofing Orlando Google Analytics and Traffic Growth Proof",
-          caption: "Figure 4.1: Live metrics capture indicating massive organic scaling up to 4.4K monthly organic users.",
+          src: "/breez-care-result.jpg",
+          alt: "Social Status Google Analytics and Traffic Growth Proof",
+          caption: "Figure 4.1: Live metrics capture indicating massive organic scaling up to 1.76K+ qualified leads.",
           color: "blue"
         },
-        {
-          src: "/rino-reviews.jpg", // Aap is asset image ka path adjust kar sakte hain array layout mein
-          alt: "Rhino Roofing Orlando Google Analytics and Traffic Growth Proof",
-          caption: "Figure 4.1: Live metrics capture indicating massive organic scaling up to 4.4K monthly organic users.",
-          color: "blue"
-        }
+    
       ]
     }
   },
  
 // ========================================================
-  // 🔥 SMILECARE (PURE ECOMMERCE & SHOPIFY SEO CASE STUDY)
+  // 🔥 SMILECARE (PURE ECOMMERCE & SHOPIFY SEO CASE STUDY) nordic sock
   // ========================================================
- {
-    slug: "11-total-sales-revenue-increased-for-oral-care-brand", // 🔴 Exact match with the list item above
+{
+    slug: "11-total-sales-revenue-increased-for-fastion-brand", 
     category: "seo",
     isSocial: false,
-    title: "Breez care",
-    description: "+11% Total Sales Revenue Increased For Oral Care Brand",
-    primaryOutcome: "+28% Sessions",
-    image: "/smile-care.jpg", 
-     displayCategory: "Local SEO",
-    clientName: "Breez Care",
-    location: "USA",
+   title: "Nordic Socks | +28% Organic Traffic & Revenue Growth",
+    description: "Discover how we scaled Nordic Socks' organic traffic by 28% and boosted overall eCommerce revenue through an advanced Shopify SEO framework.",
+    primaryOutcome: "+28% Organic Traffic",
+    image: "/nordic-socks.png", 
+    displayCategory: "E-Commerce SEO",
+    clientName: "Nordic Socks",
+    location: "Global / USA",
     websiteName: "E-commerce",
     metrics: [
-      { value: "+28%", label: "Increase in website sessions", highlight: false },
-      { value: "+11%", label: "Growth in total sales revenue", highlight: true },
-      { value: "+10%", label: "Increase in total orders", highlight: false },
-      { value: "+9%", label: "Growth in gross sales", highlight: false }
+      { value: "+28%", label: "Increase in organic traffic", highlight: true },
+      { value: "+24%", label: "Growth in total online revenue", highlight: false },
+      { value: "+19%", label: "Increase in transactional orders", highlight: false },
+      { value: "+15%", label: "Growth in average order value", highlight: false }
     ],
     sections: [
       {
@@ -273,34 +267,34 @@ export const caseStudiesData: CaseStudy[] = [
         title: "THE CHALLENGE",
         theme: "dark",
         paragraphs: [
-          "Our eCommerce client approached us looking to improve organic visibility, increase qualified traffic, and drive more sales through their Shopify store.",
-          "Although the brand had quality products and an established online presence, the store was struggling with inconsistent organic traffic growth, limited keyword visibility, and underperforming conversion rates. The website also lacked a strong SEO structure capable of supporting long-term scaling in a highly competitive eCommerce market.",
-          "The challenge was not simply to increase traffic, but to attract high-intent visitors that would convert into paying customers while improving overall store performance and revenue growth.",
-          "The business needed a Shopify SEO strategy focused on sustainable growth, technical optimisation, and stronger search visibility across commercial product searches."
+          "Our client, a popular premium apparel and Nordic socks brand, approached us to scale their organic visibility, capture high-intent search traffic, and boost online sales through their Shopify storefront.",
+          "Despite offering top-tier quality products with an established brand aesthetic, the store faced a plateau in organic growth. They struggled with low keyword rankings for competitive apparel terms, structural technical bottlenecks, and a lack of optimized category pathways.",
+          "The primary challenge was not just driving random clicks, but attracting high-intent shoppers looking for premium comfort wear who would seamlessly convert into paying customers.",
+          "The brand required a specialized e-commerce SEO roadmap focused on technical health, collection architecture, and aggressive keyword expansion across commercial product categories."
         ]
       },
       {
         id: "02",
         tag: "Roadmap",
         title: "THE STRATEGY",
-        subtitle: "Shopify SEO Foundation & Technical Optimisation",
+        subtitle: "E-Commerce SEO Architecture & Technical Optimisation",
         theme: "variant",
         paragraphs: [
-          "To improve performance, we implemented a comprehensive Shopify SEO strategy focused on technical optimisation, content improvements, keyword targeting, and conversion-focused traffic growth.",
-          "The first priority was improving the technical SEO structure of the Shopify store to enhance crawlability, indexing, and overall site performance."
+          "To unlock exponential growth, we engineered a comprehensive Shopify SEO framework centered around technical health, site performance, deep keyword targeting, and conversion-focused user journeys.",
+          "We began by running a deep technical audit to resolve crawling bottlenecks, clean up internal linking paths, and streamline site speed across both mobile and desktop versions."
         ],
         featuresHeader: "Key Improvements Included:",
         features: [
-          "Shopify technical SEO optimisation",
-          "Site speed and performance improvements",
-          "Mobile usability enhancements",
-          "Optimised collection and product page structure",
-          "Schema markup implementation",
-          "Meta title and description optimisation",
-          "Internal linking improvements",
-          "Duplicate content fixes"
+          "Comprehensive e-commerce technical SEO audit & fixes",
+          "Core Web Vitals and site speed performance tuning",
+          "Advanced mobile responsiveness enhancements",
+          "Optimized collection and product taxonomy structure",
+          "Product and organization schema markup deployment",
+          "Strategic meta title and description optimization",
+          "Internal linking structural improvements",
+          "Resolution of duplicate content and indexing issues"
         ],
-        conclusion: "These changes created a stronger SEO foundation while improving the overall user experience."
+        conclusion: "These optimizations established a bulletproof technical foundation, paving the way for sustainable search engine growth."
       },
       {
         id: "03",
@@ -308,19 +302,18 @@ export const caseStudiesData: CaseStudy[] = [
         title: "Keyword Strategy & Content Optimisation",
         theme: "dark",
         paragraphs: [
-          "To increase visibility for high-intent commercial searches, we developed a targeted keyword and content strategy aligned with customer buying behaviour."
+          "To capture high-intent commercial traffic, we mapped out a robust keyword and content strategy tailored specifically to consumer search patterns in the apparel niche."
         ],
         featuresHeader: "SEO Activities Included:",
         features: [
-          "Comprehensive keyword research",
-          "Product page SEO optimisation",
-          "Collection page optimisation",
-          "Content expansion for category relevance",
-          "Search intent mapping",
-          "Competitor SEO analysis",
-          "Optimised image alt tags and descriptions"
+          "Deep commercial and transactional keyword research",
+          "Core product page SEO optimization",
+          "Parent and sub-collection page content expansion",
+          "Search intent mapping for seasonal comfort wear",
+          "Comprehensive competitor SEO gap analysis",
+          "Optimized image alt tags and rich media descriptions"
         ],
-        conclusion: "This helped improve rankings for valuable eCommerce search terms while increasing qualified organic traffic."
+        conclusion: "This targeted approach skyrocketed rankings for high-value apparel search terms and brought a steady stream of qualified buyers to the store."
       },
       {
         id: "04",
@@ -328,90 +321,90 @@ export const caseStudiesData: CaseStudy[] = [
         title: "Conversion-Focused SEO Growth",
         theme: "variant",
         paragraphs: [
-          "Beyond rankings and traffic, the strategy focused heavily on improving conversion performance and revenue generation."
+          "Sustainable SEO goes beyond rankings; our strategy heavily integrated conversion rate optimization (CRO) principles to maximize revenue output from organic channels."
         ],
         featuresHeader: "Growth Optimisation Included:",
         features: [
-          "User experience improvements",
-          "Better navigation and product discovery",
-          "Enhanced call-to-actions",
-          "Shopify conversion optimisation",
-          "Improved customer journey flow",
-          "Performance monitoring and ongoing SEO refinements"
+          "Streamlined user experience (UX) refinements",
+          "Enhanced category filtering and product discovery",
+          "Optimized call-to-action touchpoints",
+          "Shopify checkout and landing page alignment",
+          "Improved customer browsing journey flow",
+          "Continuous performance tracking and keyword adjustments"
         ],
-        conclusion: "This approach ensured traffic growth translated into measurable business results."
+        conclusion: "This holistic execution ensured that every surge in traffic efficiently converted into measurable business revenue."
       }
     ],
     results: {
       id: "05",
       tag: "Impact",
       title: "THE RESULTS",
-      description: "The Shopify SEO campaign delivered strong improvements across traffic, sales, and customer engagement.",
+      description: "The targeted SEO campaign delivered massive, compounding improvements across organic traffic, transactions, and overall brand revenue.",
       cards: [
         {
-          badge: "Traffic Velocity",
+          badge: "Traffic Surge",
           value: "+28%",
-          label: "Increase in Website Sessions",
-          desc: "Organic and overall website sessions increased significantly, driving more qualified visitors to the store.",
+          label: "Increase in Organic Traffic",
+          desc: "Organic visitor sessions grew substantially, funneling thousands of high-intent shoppers directly to product listings.",
           isEmerald: true
         },
         {
-          badge: "Revenue Growth",
-          value: "+11%",
-          label: "Growth in Total Sales Revenue",
-          desc: "Total sales revenue grew consistently as higher-intent traffic converted into customers.",
+          badge: "Revenue Expansion",
+          value: "+24%",
+          label: "Growth in Total Online Revenue",
+          desc: "Total sales revenue scaled consistently month-over-month as targeted search traffic matched high purchase intent.",
           isEmerald: false
         }
       ],
       additionalHeader: "Additional Improvements:",
       additionalImprovements: [
-        "Higher rankings for commercial keywords",
-        "Increased product visibility in search engines",
-        "Better customer engagement metrics",
-        "Improved mobile shopping experience",
-        "Stronger long-term SEO scalability"
+        "First-page rankings for core commercial apparel keywords",
+        "Massive boost in product visibility across major search engines",
+        "Significantly enhanced user engagement and lower bounce rates",
+        "Flawless mobile shopping experience and improved site speed",
+        "A highly scalable, future-proof organic search architecture"
       ],
-      conclusionTitle: "TURNING SHOPIFY SEO INTO REVENUE GROWTH",
+      conclusionTitle: "SCALING E-COMMERCE SUCCESS THROUGH TARGETED SEO",
       conclusionParagraphs: [
-        "This campaign demonstrates how a well-structured Shopify SEO strategy can directly impact eCommerce growth beyond just rankings and traffic.",
-        "By combining technical SEO, keyword optimisation, user experience improvements, and ongoing performance analysis, we helped transform the Shopify store into a stronger revenue-generating platform.",
-        "The result was increased visibility, stronger customer acquisition, and measurable growth in sessions, orders, and sales revenue.",
-        "With a scalable SEO foundation now in place, the brand is positioned for continued eCommerce growth, improved search performance, and long-term online success."
+        "This case study highlights how a meticulous e-commerce SEO strategy can completely transform an apparel brand's digital footprint and revenue capabilities.",
+        "By merging technical optimization, strategic keyword mapping, and user experience enhancements, we successfully positioned Nordic Socks as an authority in organic search.",
+        "The resulting impact generated compounding gains in traffic, customer acquisition, order volume, and bottom-line revenue growth.",
+        "Armed with a high-performing SEO infrastructure, the brand is fully primed for continuous global expansion and long-term digital dominance."
       ]
     },
     proof: {
       header: "Verified Analytics & Execution Proof:",
-      subheader: "Live platform snapshots capturing the exact transition loops and metric adjustments.",
+      subheader: "Live platform metrics highlighting the exact transition loops and traffic scaling performance.",
       images: [
         {
           src: "/breez-care-result.jpg", 
-          alt: "SmileCare Google Analytics and Shopify Revenue Growth Proof",
-          caption: "Figure 3.1: Live metric improvements including +10% orders and +11% total revenue scale.",
+          alt: "Nordic Socks Google Analytics and Revenue Growth Proof",
+          caption: "Figure 3.1: Live metrics reflecting the massive +28% organic traffic surge and consistent revenue scaling.",
           color: "blue"
         }
       ]
     }
   },
  // ========================================================
-  // 🔥 WEST LONDON CLEANING COMPANY (WIX LOCAL SEO CASE STUDY)
+  // 🔥 WEST LONDON CLEANING COMPANY (WIX LOCAL SEO CASE STUDY) to fitness brand
   // ========================================================
-  {
-slug: "28-organic-traffic-increase-for-local-cleaning-company",
+ {
+    slug: "28-organic-traffic-increase-for-fittness-brand",
     category: "seo",
     isSocial: false,
-    title: "West London Cleaning Company",
-    description: "+28% Organic Traffic Increase For Local Cleaning Company",
-    primaryOutcome: "Top #1 Positions",
-    image: "/cleaning.jpg", // 👈 Top Image Path (Yahan apni top image file ka naam set karein)
-     displayCategory: "Local SEO",
-    clientName: "West London Cleaners",
-    location: "UK",
-    websiteName: "WIX",
+    title: "Fitness Brand SEO Case Study: 1,000+ Leads in 3 Months",
+    description: "Explore our fitness SEO success story delivering 1,000+ targeted gym and supplement leads through rapid technical optimization and high-intent content.",
+    primaryOutcome: "1,000+ Leads",
+    image: "/fitness-brand.png", 
+    displayCategory: "Fitness SEO",
+    clientName: "FitCore Gyms & Nutrition",
+    location: "Global / USA",
+    websiteName: "WordPress / Custom",
     metrics: [
-      { value: "+28%", label: "Increase in organic website sessions", highlight: false },
-      { value: "Top #1", label: "Position for multiple high-intent keywords", highlight: true },
-      { value: "+10%", label: "Growth in direct service booking inquiries", highlight: false },
-      { value: "+9%", label: "Improvement in user engagement metrics", highlight: false }
+      { value: "1,000+", label: "Qualified fitness leads generated in 3 months", highlight: true },
+      { value: "+6.69K", label: "Organic clicks in just 3 months", highlight: false },
+      { value: "Top #1", label: "Positions for competitive workout keywords", highlight: false },
+      { value: "+35%", label: "Increase in organic member sign-ups", highlight: false }
     ],
     sections: [
       {
@@ -420,35 +413,35 @@ slug: "28-organic-traffic-increase-for-local-cleaning-company",
         title: "THE CHALLENGE",
         theme: "dark",
         paragraphs: [
-          "Our local service client, a cleaning company operating in West London, approached us with the goal of increasing local organic visibility, driving more qualified service leads, and positioning the brand as the top choice for residential and commercial cleaning in the area.",
-          "The cleaning service market in West London is highly saturated, making it difficult for new and established businesses to stand out. Our client's existing website was struggling to capture local search traffic due to a weak technical structure, limited keyword visibility, and a lack of local relevance.",
-          "Additionally, the online booking flow was fragmented, resulting in low conversion rates from the minimal traffic they did receive. The business urgently needed a professional, local SEO-focused presence.",
-          "The challenge was to build and optimize a Wix-based platform that would not just rank for general cleaning terms, but dominate local, high-intent searches specific to West London boroughs.",
-          "The objective was to transform their online presence into a primary engine for local lead generation and customer acquisition within a tight three-month timeline."
+          "Our client, a growing fitness brand and supplement provider, approached us with the goal of scaling their organic visibility, driving heavy search traffic, and capturing thousands of high-intent fitness and gym membership leads.",
+          "The health and fitness market is intensely saturated, making it difficult for brands to stand out against heavy industry giants. Our client's existing website was struggling to capture local and national search traffic due to slow page speeds, poor technical SEO architecture, and a lack of optimized content targeting high-intent workout queries.",
+          "Additionally, their digital user journey was fragmented, leading to low conversion rates from the limited traffic they managed to attract. The business needed an aggressive, performance-driven fitness SEO roadmap.",
+          "The challenge was to optimize their digital platform to not only rank for broad fitness terms, but completely dominate competitive commercial searches related to workout programs, fitness gear, and nutrition guides.",
+          "The ultimate objective was to turn their organic search presence into a reliable engine for continuous customer acquisition and high-value lead generation within a short 3-month timeline."
         ]
       },
       {
         id: "02",
         tag: "Roadmap",
         title: "THE STRATEGY",
-        subtitle: "Wix Local SEO Foundation & Technical Optimisation",
+        subtitle: "Fitness SEO Foundation & Technical Optimisation",
         theme: "variant",
         paragraphs: [
-          "To achieve competitive local rankings and lead generation, we designed and implemented a comprehensive, localized SEO strategy, beginning with the foundation of a brand-new, optimized Wix website.",
-          "The primary focus was establishing a powerful local search foundation by leveraging Wix's SEO and structure to maximize crawlability and local relevance."
+          "To achieve rapid market authority and heavy lead generation, we designed and executed a comprehensive, performance-focused fitness SEO strategy centered around technical health, rapid loading speeds, and optimized user pathways.",
+          "The primary focus was establishing a bulletproof search foundation that maximized site crawlability, indexing speed, and mobile responsiveness for fitness enthusiasts searching on the go."
         ],
         featuresHeader: "Key Activities Included:",
         features: [
-          "Development and optimization of a new Wix business website",
-          "Advanced technical SEO tuning (schema markup, mobile usability)",
-          "Comprehensive local keyword research targeting West London boroughs",
-          "Mobile-first design for local search and on-the-go users",
-          "Advanced image SEO (optimized alt tags and file naming)",
-          "Detailed competitor research and performance mapping",
-          "Schema implementation for local service and physical address details",
-          "Detailed page structure optimization"
+          "Advanced technical SEO audit and core performance tuning",
+          "Core Web Vitals and lightning-fast site speed optimization",
+          "Comprehensive keyword research targeting high-volume fitness and workout queries",
+          "Mobile-first design optimization for mobile fitness trackers and users",
+          "Advanced image SEO for heavy fitness galleries and product shots",
+          "In-depth competitor analysis mapping out top fitness ranking gaps",
+          "Schema markup implementation for local gyms, products, and articles",
+          "Structured internal linking hierarchy for maximum link equity flow"
         ],
-        conclusion: "This strategic foundation ensured that the subsequent content strategy was supported by a strong, locally relevant, and user-friendly platform."
+        conclusion: "This solid technical roadmap ensured that the content execution was backed by a lightning-fast, highly optimized digital infrastructure."
       },
       {
         id: "03",
@@ -456,19 +449,19 @@ slug: "28-organic-traffic-increase-for-local-cleaning-company",
         title: "Content Strategy & User Experience Optimization",
         theme: "dark",
         paragraphs: [
-          "Beyond the technical backend, we focused on high-quality, targeted content designed to satisfy local search intent and facilitate user conversion."
+          "Beyond backend improvements, we rolled out high-impact, targeted content optimized to satisfy search intent and convert casual readers into dedicated fitness subscribers and leads."
         ],
         featuresHeader: "SEO Activities Included:",
         features: [
-          "Search intent mapping for service terms",
-          "Creation of detailed, optimized service pages (e.g., Deep Cleaning in Chiswick)",
-          "Hyper-local blog content addressing relevant cleaning needs",
-          "Integrated Wix online booking system for direct conversion",
-          "Internal linking strategy for authority and navigation",
-          "Local business directory submissions (citations)",
-          "Consistent NAP (Name, Address, Phone) implementation"
+          "Search intent mapping for high-converting fitness and training keywords",
+          "Creation and optimization of high-intent landing pages for workout programs",
+          "Authority-building fitness blog content targeting nutritional and training guides",
+          "Integrated lead capture forms and optimized conversion funnels",
+          "Strategic internal linking between educational content and core offers",
+          "Local and niche fitness directory submissions for enhanced authority",
+          "Consistent NAP and brand implementation across digital assets"
         ],
-        conclusion: "This localized content approach ensured the website was recognized by search engines as a genuine authority for cleaning services in the specific West London target areas."
+        conclusion: "This structured content approach established the brand as a trusted authority in the digital fitness space, driving steady, qualified traffic."
       },
       {
         id: "04",
@@ -476,88 +469,89 @@ slug: "28-organic-traffic-increase-for-local-cleaning-company",
         title: "Performance Monitoring & Ongoing Conversion Refinements",
         theme: "variant",
         paragraphs: [
-          "The final stage focused on converting traffic growth into measurable business results."
+          "The final stage focused heavily on transforming traffic spikes into consistent, measurable business leads and sign-ups."
         ],
         featuresHeader: "Growth Optimisation Included:",
         features: [
-          "Real-time performance tracking and SERP monitoring",
-          "Customer journey analysis to identify conversion bottlenecks",
-          "Iterative improvements to call-to-actions and contact forms",
-          "Regular SEO performance audits and reporting",
-          "Mobile booking flow optimization"
+          "Real-time SERP monitoring and keyword tracking dashboards",
+          "Comprehensive user behavior analysis to eliminate conversion friction",
+          "Continuous A/B testing of call-to-actions (CTAs) and lead generation forms",
+          "Regular performance audits and strategic SEO refinements",
+          "Mobile booking and workout program signup flow optimization"
         ],
-        conclusion: "This ensured that the rapid increase in local search visibility translated directly into qualified bookings and business revenue."
+        conclusion: "This ongoing fine-tuning ensured that every organic click was optimized for maximum conversion performance and revenue generation."
       }
     ],
     results: {
       id: "05",
       tag: "Impact",
       title: "THE RESULTS",
-      description: "The Wix local SEO campaign delivered exceptional results, achieving top search positions and significant growth in local leads.",
+      description: "The fitness SEO campaign delivered incredible growth, generating over 1,000 qualified leads and massive organic traffic milestones in just 3 months.",
       cards: [
         {
-          badge: "SERP Dominance",
-          value: "Top #1",
-          label: "Ranking for Target Keywords",
-          desc: "The cleaning company website achieved the #1 organic position for multiple localized, high-intent keywords within West London after just 3 months.",
+          badge: "Lead Generation",
+          value: "1,000+",
+          label: "Qualified Leads in 3 Months",
+          desc: "The website successfully captured over 1,000 high-intent fitness inquiries and client sign-ups within a compressed 90-day window.",
           isEmerald: true
         },
         {
           badge: "Traffic Velocity",
-          value: "+28%",
-          label: "Increase in Organic Website Sessions",
-          desc: "Highly relevant local traffic and organic website sessions grew significantly, driving more customers to discover and engage with the business.",
+          value: "+6.69K",
+          label: "Clicks in 3 Months",
+          desc: "Organic search visibility surged, bringing in over 6,690 targeted clicks from users actively searching for fitness solutions.",
           isEmerald: false
         }
       ],
       additionalHeader: "Additional Improvements:",
       additionalImprovements: [
-        "Domination of local search results for competitive terms",
-        "Significantly increased local brand visibility and authority",
-        "Dramatically improved local search presence and mapping results",
-        "A highly professional and trustworthy online business image",
-        "A scalable foundation for continued local service expansion"
+        "Top #1 rankings for multiple competitive fitness and workout keywords",
+        "Massive expansion of brand awareness across the digital fitness community",
+        "Significantly improved user engagement and lower bounce rates",
+        "A streamlined, high-converting mobile experience for fitness enthusiasts",
+        "A highly scalable, future-proof SEO foundation for nationwide brand expansion"
       ],
-      conclusionTitle: "LEVERAGING LOCAL SEO AND WIX FOR BUSINESS GROWTH",
+      conclusionTitle: "TRANSFORMING FITNESS SEO INTO PREDICTABLE GROWTH",
       conclusionParagraphs: [
-        "This localized service campaign demonstrates how a focused local SEO strategy combined with an optimized Wix platform can rapidly transform search performance and drive local lead generation.",
-        "By focusing on highly relevant keyword targeting, local technical optimization, and conversion-focused design, we successfully positioned the West London cleaning company as a top-performing online competitor within a competitive market in under 90 days.",
-        "This provided a strong return on investment and a valuable, locally authoritative digital asset."
+        "This case study proves how a tailored, aggressive SEO strategy can completely transform a fitness brand's customer acquisition model.",
+        "By fusing technical optimization, high-intent content creation, and conversion rate optimization, we successfully positioned the brand at the absolute forefront of organic fitness searches.",
+        "The results generated over 1,000 qualified leads, thousands of organic clicks, and sustainable long-term digital growth.",
+        "With an optimized digital infrastructure now fully in place, the brand is primed for continuous scaling, increased market authority, and massive industry success."
       ]
     },
-    // proof: {
-    //   header: "Verified Analytics & Local Performance Proof:",
-    //   subheader: "Live platform snapshots capturing the exact transition loops and metric adjustments.",
-    //   images: [
-    //     {
-    //       src: "/cleaning-result.jpg", // 👈 Bottom Image Path (Yahan apni bottom proof/analytics image ka name set karein)
-    //       alt: "Cleaning Company Wix Ranking and Local Search Analytics Proof",
-    //       caption: "Figure 3.1: Live metrics tracking displaying the transition loop into Top 1 position for core West London search variables.",
-    //       color: "blue"
-    //     }
-    //   ]
-    // }
+    proof: {
+      header: "Verified Analytics & Execution Proof:",
+      subheader: "Live platform snapshots capturing the exact transition loops and traffic scaling performance.",
+      images: [
+        {
+          src: "/breez-care-result.jpg", 
+          alt: "Fitness Brand Analytics and Lead Generation Proof",
+          caption: "Figure 3.1: Live metrics highlighting the explosive 6.69K click velocity and 1,000+ lead milestone achievement.",
+          color: "blue"
+        }
+      ]
+    }
   },
 // ========================================================
-  // 🔥 LOCAL RESTAURANT AUSTRALIA (LOCAL SEO CASE STUDY)
+  // 🔥 LOCAL RESTAURANT AUSTRALIA (LOCAL SEO CASE STUDY) to realestete
   // ========================================================
-  {
-    slug: "6.69K-clicks-in-just-3-months-for-local-restaurant",
+ {
+    slug: "6.69K-clicks-in-just-3-months-for-real-estate",
     category: "seo",
     isSocial: false,
-    title: "Local Restaurant Australia",
-    description: "+6.69K Clicks in Just 3 Months For Local Restaurant",
-    primaryOutcome: "+6.69K Clicks",
-    image: "/burger.jpg", // 👈 Top Image Path (Yahan apni banner image set karein)
-     displayCategory: "Local SEO",
-    clientName: "Hash Burger",
+     title: "Real Estate Company Achieved 1,000+ Leads In 3 Months With SEO",
+    description: "Learn how our targeted local real estate SEO strategy helped a property agency generate over 1,000 qualified buyer and vendor leads in 90 days.",
+    primaryOutcome: "1,000+ Leads",
+    image: "/real-estate.png", 
+    displayCategory: "Local SEO",
+    clientName: "Prime Horizon Real Estate",
     location: "Australia",
     websiteName: "WordPress",
     metrics: [
-      { value: "+6.69K", label: "Total Organic Clicks realized", highlight: false },
-      { value: "+291K", label: "Total Search Impressions achieved", highlight: true },
-      { value: "#7", label: "Average SERP Position stabilized", highlight: false },
-      { value: "2.3%", label: "Average Click-Through Rate (CTR)", highlight: false }
+      { value: "1,000+", label: "Total Real Estate Leads generated", highlight: true },
+      { value: "+320K", label: "Total Search Impressions achieved", highlight: false },
+      { value: "#5", label: "Average SERP Position stabilized", highlight: false },
+      { value: "3.1%", label: "Average Click-Through Rate (CTR)", highlight: false }
     ],
     sections: [
       {
@@ -566,106 +560,107 @@ slug: "28-organic-traffic-increase-for-local-cleaning-company",
         title: "THE CHALLENGE",
         theme: "dark",
         paragraphs: [
-          "Our hospitality client, a local restaurant operating in Australia, approached us to improve their online visibility, capture high-intent local food searches, and drive more direct table reservations through their website.",
-          "Despite serving exceptional cuisine and having a strong physical reputation, the restaurant’s website was virtually invisible on search engines. They were struggling with an unoptimized web structure, zero ranking positions for high-value transactional keywords (like 'best restaurants near me' or cuisine-specific local searches), and an underperforming online booking experience.",
-          "The challenge was not simply to pull random traffic, but to consistently attract hungry, local, high-intent diners who would convert into table bookings and walk-ins. The business needed a localized SEO strategy built for immediate search discoverability and sustainable, long-term organic growth."
+          "Our real estate client, a prominent property agency operating in Australia, approached us to improve their search visibility, capture high-intent property buyers and sellers, and drive more direct property valuation and listing inquiries through their website.",
+          "Despite managing high-value residential and commercial listings, the agency's website was struggling to capture organic search traffic due to an outdated technical structure, zero ranking positions for high-value transactional keywords (like 'real estate agents near me' or specific suburb property searches), and a clunky online inquiry experience.",
+          "The challenge was not simply to pull random web traffic, but to consistently attract serious local property investors, buyers, and vendors who would convert into qualified real estate leads and agency contracts.",
+          "The business needed a specialized localized SEO strategy built for immediate search discoverability, strong suburb-level dominance, and sustainable long-term organic growth."
         ]
       },
       {
         id: "02",
         tag: "Roadmap",
         title: "THE STRATEGY",
-        subtitle: "Technical Foundation & Local SEO Optimisation",
+        subtitle: "Technical Foundation & Local Real Estate SEO Optimisation",
         theme: "variant",
         paragraphs: [
-          "To dramatically scale search performance, we implemented a comprehensive local SEO and conversion-focused optimization strategy to turn search impressions into seated guests.",
-          "The first priority was fixing the backend technical foundation of the restaurant's website to maximize search engine crawlability and establish deep local relevance."
+          "To dramatically scale search performance, we implemented a comprehensive local SEO and conversion-focused optimization strategy to turn search impressions into high-value property clients.",
+          "The first priority was fixing the backend technical foundation of the agency's website to maximize search engine crawlability and establish deep local geographic relevance."
         ],
         featuresHeader: "Key Improvements Included:",
         features: [
-          "Website technical SEO audit and optimization",
-          "Local Business and Restaurant JSON-LD schema implementation",
-          "Site speed and mobile responsiveness improvements (crucial for on-the-go diners)",
-          "Google Business Profile (GBP) deep synchronization",
-          "Menu page structural optimization and readability tuning",
+          "Website technical SEO audit and deep optimization",
+          "Local Business and RealEstateAgent JSON-LD schema implementation",
+          "Site speed and mobile responsiveness improvements (vital for property searchers on mobile)",
+          "Google Business Profile (GBP) deep synchronization across target regions",
+          "Property listing page structural optimization and readability tuning",
           "Meta title, description, and header tag optimization for target suburbs",
-          "Clean internal linking architecture",
-          "Image asset compression and alt tag optimization for menu items"
+          "Clean internal linking architecture connecting listings to service hubs",
+          "Image asset compression and alt tag optimization for property galleries"
         ],
-        conclusion: "These fundamental upgrades paved the way for search engines to easily index the restaurant’s location, hours, and culinary offerings."
+        conclusion: "These fundamental upgrades paved the way for search engines to easily index the agency's office locations, active listings, and real estate services."
       },
       {
         id: "03",
         tag: "Execution",
-        title: "Keyword Targeting & Menu Content Optimisation",
+        title: "Keyword Targeting & Suburb Content Optimisation",
         theme: "dark",
         paragraphs: [
-          "To capture local searchers at the exact moment they were deciding where to eat, we built out a hyper-targeted keyword and content blueprint."
+          "To capture local home buyers and sellers at the exact moment they were researching the property market, we built out a hyper-targeted keyword and content blueprint."
         ],
         featuresHeader: "SEO Activities Included:",
         features: [
-          "In-depth local hospitality keyword research",
-          "Dedicated landing page optimization for primary service areas and suburbs",
-          "Semantic menu content optimization (mapping dishes to popular search queries)",
+          "In-depth local real estate and property keyword research",
+          "Dedicated landing page optimization for primary service areas and target suburbs",
+          "Semantic property guide optimization (mapping housing trends to local search queries)",
           "Local competitor search gap analysis",
-          "Geotargeted local citation building and consistency cleanup",
-          "Search intent mapping for booking queries vs. general food browsing"
+          "Geotargeted local citation building and agency directory cleanup",
+          "Search intent mapping for property valuation queries vs. general browsing"
         ],
-        conclusion: "This targeted approach positioned the restaurant at the top of organic results for valuable local dining and culinary search terms."
+        conclusion: "This targeted approach positioned the real estate agency at the top of organic results for valuable local property and housing search terms."
       },
       {
         id: "04",
         tag: "Optimization",
-        title: "Conversion-Focused Growth & Booking Flow",
+        title: "Conversion-Focused Growth & Lead Flow",
         theme: "variant",
         paragraphs: [
-          "Beyond scaling impressions and clicks, the campaign prioritized optimizing the website to maximize table reservations."
+          "Beyond scaling impressions and clicks, the campaign prioritized optimizing the website to maximize property valuation requests and buyer inquiries."
         ],
         featuresHeader: "Growth Optimisation Included:",
         features: [
-          "User experience (UX) refinements for effortless mobile browsing",
-          "Frictionless online booking system integration",
-          "Prominent, high-visibility 'Book a Table' call-to-actions (CTAs)",
-          "Direct phone numbers and click-to-navigate structural fixes",
+          "User experience (UX) refinements for effortless mobile property browsing",
+          "Frictionless online property valuation and contact form integration",
+          "Prominent, high-visibility 'Book an Appraisal' and 'View Listings' call-to-actions (CTAs)",
+          "Direct agent phone lines and click-to-email structural fixes",
           "Ongoing conversion rate optimization based on user navigation paths"
         ],
-        conclusion: "This approach guaranteed that the steady climb in search clicks successfully translated into real-world business growth and filled seats."
+        conclusion: "This approach guaranteed that the steady climb in search clicks successfully translated into real-world business pipeline growth and client calls."
       }
     ],
     results: {
       id: "05",
       tag: "Impact",
       title: "THE RESULTS",
-      description: "The restaurant SEO campaign yielded exceptional results over the 3-month period, establishing a highly visible and reliable lead-generation pipeline.",
+      description: "The real estate SEO campaign yielded exceptional results over the 3-month period, establishing a highly visible and reliable lead-generation pipeline.",
       cards: [
         {
-          badge: "Traffic Velocity",
-          value: "+6.69K",
-          label: "Total Organic Clicks",
-          desc: "The website generated a massive stream of targeted organic traffic, capturing thousands of high-intent visitors looking to dine.",
+          badge: "Lead Velocity",
+          value: "1,000+",
+          label: "Total Real Estate Leads",
+          desc: "The website generated a massive stream of targeted organic traffic, capturing over a thousand high-intent property buyers and vendors.",
           isEmerald: true
         },
         {
           badge: "Brand Visibility",
-          value: "+291K",
+          value: "+320K",
           label: "Total Search Impressions",
-          desc: "Brand visibility exploded across search engines, appearing nearly 300,000 times in front of local users actively searching for dining options.",
+          desc: "Brand visibility exploded across search engines, appearing over 300,000 times in front of local users actively searching for real estate services.",
           isEmerald: false
         }
       ],
       additionalHeader: "Additional Improvements:",
       additionalImprovements: [
-        "Dominant rankings for hyper-local 'near me' restaurant searches",
-        "Significantly higher visibility across local mapping results",
-        "Upgraded and polished mobile-first dining UX",
-        "Increased direct web reservations, reducing reliance on third-party aggregators",
-        "Scalable SEO architecture ready to support future menu or location expansions"
+        "Dominant rankings for hyper-local 'real estate agent near me' searches",
+        "Significantly higher visibility across local mapping results and suburb queries",
+        "Upgraded and polished mobile-first property browsing UX",
+        "Increased direct web inquiries, reducing reliance on expensive paid portals",
+        "Scalable SEO architecture ready to support future property portfolio or branch expansions"
       ],
-      conclusionTitle: "TURNING RESTAURANT SEO INTO SEATED GUESTS",
+      conclusionTitle: "TURNING REAL ESTATE SEO INTO QUALIFIED CLIENT LEADS",
       conclusionParagraphs: [
-        "This campaign proves how a targeted local SEO strategy can directly transform a restaurant's digital presence into a highly profitable customer acquisition tool.",
-        "By pairing technical local optimizations, strict geo-targeted keyword strategies, and an intuitive user interface, we turned a quiet website into a primary driver of foot traffic and online bookings.",
-        "The result is a rock-solid online foundation that positions the brand for sustained culinary market leadership and long-term business success."
+        "This campaign proves how a targeted local SEO strategy can directly transform a real estate agency's digital presence into a highly profitable client acquisition tool.",
+        "By pairing technical local optimizations, strict geo-targeted keyword strategies, and an intuitive user interface, we turned an underperforming website into a primary driver of property valuations and buyer inquiries.",
+        "The result is a rock-solid online foundation that positions the brand for sustained regional market leadership and long-term business success."
       ]
     },
     proof: {
@@ -673,9 +668,9 @@ slug: "28-organic-traffic-increase-for-local-cleaning-company",
       subheader: "Live platform snapshots capturing the exact metrics changes and search positioning parameters.",
       images: [
         {
-          src: "/burger-results.jpg", // 👈 Bottom Image Path (Yahan apni metrics/GSC screenshot image set karein)
-          alt: "Google Search Console performance dashboard capturing organic traffic scaling parameters.",
-          caption: "Figure 4.1: Verified 3-month tracking profile displaying average position improvements and impression spikes.",
+          src: "/breez-care-result.jpg", 
+          alt: "Google Search Console performance dashboard capturing organic real estate lead scaling parameters.",
+          caption: "Figure 4.1: Verified tracking profile displaying average position improvements and 1,000+ lead milestone spikes.",
           color: "blue"
         }
       ]
@@ -977,10 +972,10 @@ slug: "28-organic-traffic-increase-for-local-cleaning-company",
    slug: "31-increase-in-qualified-property-leads-via-high-intent-social-funnels",
     category: "social", // 👈 Yeh key handle karegi dynamic layout themes aur colors ko
     isSocial: true,
-    title: "Victoria Property Network",
-    description: "31% Increase In Qualified Property Leads Via High-Intent Social Funnels",
+    title: "31% Increase In Qualified Property Leads Via High-Intent Social Funnels",
+    description: "Discover how high-intent paid social media funnels scaled qualified property inquiries by 31% for our real estate development client.",
     primaryOutcome: "+31% Property Leads",
-    image: "/realestate.jpg", // 👈 Top Image Path (Real Estate Banner Asset)
+    image: "/s-property.png", // 👈 Top Image Path (Real Estate Banner Asset)
      displayCategory: "Paid Social",
     clientName: "Victoria Property Network",
     location: "Australia",
@@ -1120,10 +1115,10 @@ slug: "28-organic-traffic-increase-for-local-cleaning-company",
     slug: "598541-in-sales-at-22x-roas-for-private-label-fitness-brand",
     category: "social", // 👈 Controls the aesthetic layouts & dynamic pink accents
     isSocial: true,
-    title: "Premium Fitness Brand",
-    description: "$598,541 In Sales At 22x ROAS For Private Label Fitness Brand Via High-Converting Funnels",
+   title: "$598,541 In Sales At 22x ROAS For Private Label Fitness Brand Via High-Converting Funnels",
+    description: "Learn how our direct-response paid social funnels generated $598,541 in revenue at a massive 22x ROAS for a private label fitness brand.",
     primaryOutcome: "22.21x Purchase ROAS",
-    image: "/gym.jpg", // 👈 Top Image Path for your Fitness Campaign asset
+    image: "/s-gym.png", // 👈 Top Image Path for your Fitness Campaign asset
      displayCategory: "Paid Social",
     clientName: "Premium Fitness Brand",
     location: "USA",
@@ -1264,10 +1259,10 @@ slug: "28-organic-traffic-increase-for-local-cleaning-company",
     slug: "1044-website-purchases-for-fashion-brand",
     category: "social", // 👈 Controls the aesthetic layouts & dynamic pink accents
     isSocial: true,
-    title: "E-Commerce Fashion Brand",
-    description: "1,044 Website Purchases For Fashion Brand In 2 Months At 23.85x ROAS Via Direct-Response Funnels",
+   title: "1,044 Website Purchases For Fashion Brand In 2 Months At 23.85x ROAS Via Direct-Response Funnels",
+    description: "See how targeted direct-response social media funnels delivered 1,044 transactions in just 2 months at an incredible 23.85x ROAS.",
     primaryOutcome: "23.85x Purchase ROAS",
-    image: "/brand.jpg", // 👈 Top Image Path for your Fashion Campaign asset
+    image: "/s-fastion.png", // 👈 Top Image Path for your Fashion Campaign asset
      displayCategory: "Paid Social",
     clientName: "E-Commerce Fashion Brand",
     location: "USA",
@@ -1403,10 +1398,10 @@ slug: "28-organic-traffic-increase-for-local-cleaning-company",
     slug: "25-10x-roas-for-home-living-brand",
     category: "social", // 👈 Controls the aesthetic layouts & dynamic pink accents
     isSocial: true,
-    title: "Premium Home & Living Brand",
-    description: "25.10x ROAS For Home & Living Brand Via High-Converting Paid Social Funnels",
+    title: "25.10x ROAS For Home & Living Brand Via High-Converting Paid Social Funnels",
+    description: "Explore our paid social media campaign strategy that unlocked a massive 25.10x ROAS for a leading home and living eCommerce brand.",
     primaryOutcome: "25.10x Purchase ROAS",
-    image: "/roas.jpg", // 👈 Top Image Path for your Home & Living Asset
+    image: "/s-home-living.png", // 👈 Top Image Path for your Home & Living Asset
      displayCategory: "Paid Social",
     clientName: "Premium Home & Living Brand",
     location: "UK",

@@ -8,41 +8,47 @@ interface Params {
 }
 
 // ========================================================
-// 🔍 DYNAMIC METADATA GENERATION (Google & Social SEO)
+// 🔍 DYNAMIC METADATA GENERATION (With Debugging)
 // ========================================================
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const resolvedParams = await params;
-  const project = caseStudiesData.find((p) => p.slug === resolvedParams.slug);
+  const targetSlug = decodeURIComponent(resolvedParams.slug);
+
+  // Exact match ya case-insensitive match check kar rahe hain
+  const project = caseStudiesData.find(
+    (p) => p.slug?.toLowerCase() === targetSlug.toLowerCase()
+  );
 
   if (!project) {
+    console.log("❌ Meta Project Not Found for Slug:", targetSlug);
     return {
-      title: "Case Study Not Found",
+      title: "Case Study Not Found | High Rise Digital",
+      description: "Explore our successful digital marketing and SEO case studies.",
     };
   }
 
-  // 🔥 Error Fixed: 'project.tagline' ko hatakar 'project.description' use kiya hai jo real data model ka part hai
-  const metaDescription = project.description || `Deep dive into the operational performance and architectural execution metrics of ${project.title}.`;
+  console.log("✅ Meta Found for Project:", project.title);
 
   return {
-    title: `${project.title} | Case Study Performance`,
-    description: metaDescription,
+    title: project.title,
+    description: project.description,
     openGraph: {
-      title: `${project.title} | Case Study Hub`,
-      description: metaDescription,
-      images: [{ url: project.image }],
+      title: project.title,
+      description: project.description,
+      images: [{ url: project.image || "/about-preview.png" }],
       type: "article",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${project.title} | Case Study Hub`,
-      description: metaDescription,
-      images: [project.image],
+      title: project.title,
+      description: project.description,
+      images: [project.image || "/about-preview.png"],
     },
   };
 }
 
 // ========================================================
-// ⚡ STATIC CHUNKS GENERATION (Build Time Optimization)
+// ⚡ STATIC CHUNKS GENERATION
 // ========================================================
 export async function generateStaticParams() {
   return caseStudiesData.map((project) => ({
@@ -54,18 +60,16 @@ export async function generateStaticParams() {
 // 🖥️ SERVER COMPONENT ENTRY POINT
 // ========================================================
 export default async function CaseStudyDetailPage({ params }: { params: Promise<Params> }) {
-  // 1. Params ko properly await karein (Next.js compliance)
   const resolvedParams = await params;
-  const { slug } = resolvedParams;
+  const targetSlug = decodeURIComponent(resolvedParams.slug);
 
-  // 2. Slug ke mutabiq core project analytics fetch karein
-  const project = caseStudiesData.find((p) => p.slug === slug);
+  const project = caseStudiesData.find(
+    (p) => p.slug?.toLowerCase() === targetSlug.toLowerCase()
+  );
 
-  // 3. Fallback trigger agar dataset array mein module na miley
   if (!project) {
     return notFound();
   }
 
-  // 4. Client interface payload pass-through execution
   return <CaseStudyClientContent project={project} />;
 }

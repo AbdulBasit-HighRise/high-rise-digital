@@ -98,7 +98,7 @@ export default function CaseStudyClientContent({ project }: CaseStudyProps) {
 
             {/* RIGHT: Image Adjusted Right Next to the Main Title */}
             <div className="order-1 lg:order-2 lg:col-span-5 w-full">
-              <div className="relative aspect-[16/11] sm:aspect-[4/3] md:aspect-[16/10] lg:aspect-[4/3] w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-900 group">
+              <div className="relative aspect-[16/11] sm:aspect-[4/3] md:aspect-[16/10] lg:aspect-[4/3] w-full rounded-2xl overflow-hidden  bg-transparrent group">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -315,10 +315,7 @@ export default function CaseStudyClientContent({ project }: CaseStudyProps) {
                     <p className="text-white text-[16px] md:text-base lg:text-[17px] 2xl:text-xl font-medium tracking-[2px] mb-2">
                       {card.label}
                     </p>
-                    <p
-                      className="text-white text-[16px] md:text-base lg:text-[17px] 2xl:text-xl font-medium leading-relaxed"
-                      dangerouslySetInnerHTML={{ __html: card.desc || "" }} // 🎯 FIXED: Fallback added to prevent dynamic crash
-                    />
+                 
                   </div>
                 </div>
               ))}

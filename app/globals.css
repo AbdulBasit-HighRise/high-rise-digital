@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* @import 'swiper/css';
+@import 'swiper/css/navigation'; */
 @layer base {
   :root {
     --bg-dark: #111827;

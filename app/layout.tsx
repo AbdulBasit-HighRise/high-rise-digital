@@ -1,10 +1,13 @@
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import WhatsAppBtn from "@/components/WhatsAppBtn";
+import ContactSticker from "@/components/ContactSticker";
 import CustomCursor from "@/components/CustomCursor";
 import { Instrument_Sans, Inter } from "next/font/google";
 import { siteMetadata } from "@/app/constants/metadata";
 import Script from "next/script";
+
 
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
@@ -135,10 +138,15 @@ export default function RootLayout({
       >
         <CustomCursor />
         <Navbar />
-        <main className="min-h-screen w-full">
+       <main className="min-h-screen w-full">
           {children}
         </main>
+        
         <Footer />
+
+        {/* 🟢 Global Floating Components */}
+        <WhatsAppBtn />
+        <ContactSticker />
       </body>
     </html>
   );

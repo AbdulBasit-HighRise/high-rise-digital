@@ -232,8 +232,7 @@ export default function PortfolioPage() {
               >
                 {f.label}
               </button>
-            ))}
-
+            ))}  
           </div>
 
         </div>

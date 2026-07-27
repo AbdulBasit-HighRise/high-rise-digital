@@ -13,7 +13,7 @@ import ProvenExcellence from "@/components/sections/ProvenExcellence";
 import Stats from "@/components/sections/Stats";
 
 // ⚡ Is page ko cache rakhne ke liye configuration (Ab yeh makkhan chalega)
-export const revalidate = 3600; 
+export const revalidate = 3600;
 
 export default async function Home() {
   return (
@@ -22,8 +22,6 @@ export default async function Home() {
       <Hero />
 
       <HeroSlider />
-
-      {/* 🎯 About Preview ab baaki sections ki tarah direct aur simple load hoga */}
       <AboutPreview />
 
       <PortfolioPreview />

@@ -22,9 +22,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // 📊 SEO PERFORMANCE CAMPAIGNS
     // '/case-studies/170-leads-increased-for-roofing-company',
     '/case-studies/28-organic-traffic-increase-for-local-cleaning-company',
-    // '/case-studies/6.69K-clicks-in-just-3-months-for-local-restaurant',
-    // '/case-studies/1-76k-leads-for-aesthetic-clinic',
-    // '/case-studies/%231-position-in-serp-for-holistic-doctor-clinic',
+
+
+    // new case studies SEO
+    '/case-studies/28-organic-traffic-increase-for-fittness-brand',
+    '/case-studies/170-leads-increased-for-marketing-agency',
+    '/case-studies/6.69K-clicks-in-just-3-months-for-real-estate',
+    '/case-studies/11-total-sales-revenue-increased-for-fastion-brand',
+   
+    
+   
 
     // 📱 SOCIAL MEDIA MARKETING PERFORMANCE
     '/case-studies/31-increase-in-qualified-property-leads-via-high-intent-social-funnels',

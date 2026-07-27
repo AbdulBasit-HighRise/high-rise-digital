@@ -3,7 +3,7 @@ import { siteMetadata } from "@/app/constants/metadata";
 const serviceMeta = siteMetadata.services as any;
 const meta = serviceMeta?.seo;
 const rawImage = meta?.image || '/seo.png';
-const imageUrl = `https://www.highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
+const imageUrl = `https://highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
 
 export const metadata = {
   title: meta?.title || "SEO Agency | Improve Rankings, Traffic & Online Visibility",
@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: meta?.title,
     description: meta?.description,
-    url: 'https://www.highrisedigital.io/services/seo',
+    url: 'https://highrisedigital.io/services/seo',
     siteName: 'High Rise Digital',
     images: [
       {

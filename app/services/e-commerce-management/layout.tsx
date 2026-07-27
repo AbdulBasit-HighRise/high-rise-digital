@@ -3,7 +3,7 @@ import { siteMetadata } from "@/app/constants/metadata";
 const serviceMeta = siteMetadata.services as any;
 const meta = serviceMeta?.["e-commerce-management"] || serviceMeta?.["ecommerce"];
 const rawImage = meta?.image || '/ecommerce.webp';
-const imageUrl = `https://www.highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
+const imageUrl = `https://highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
 
 export const metadata = {
   title: meta?.title || "Ecommerce Management Agency | Store Optimization & Growth",
@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: meta?.title,
     description: meta?.description,
-    url: 'https://www.highrisedigital.io/services/e-commerce-management',
+    url: 'https://highrisedigital.io/services/e-commerce-management',
     siteName: 'High Rise Digital',
     images: [
       {

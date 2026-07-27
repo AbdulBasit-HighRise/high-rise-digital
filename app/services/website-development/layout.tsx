@@ -3,7 +3,7 @@ import { siteMetadata } from "@/app/constants/metadata";
 const serviceMeta = siteMetadata.services as any;
 const meta = serviceMeta?.["website-development"];
 const rawImage = meta?.image || '/web.png';
-const imageUrl = `https://www.highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
+const imageUrl = `https://highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
 
 export const metadata = {
   title: meta?.title || "Website Development Agency | WordPress & Shopify Experts",
@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: meta?.title,
     description: meta?.description,
-    url: 'https://www.highrisedigital.io/services/website-development',
+    url: 'https://highrisedigital.io/services/website-development',
     siteName: 'High Rise Digital',
     images: [
       {

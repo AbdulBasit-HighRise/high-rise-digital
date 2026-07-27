@@ -1,7 +1,7 @@
 import { siteMetadata } from "@/app/constants/metadata";
 
 const meta = siteMetadata.contact as any;
-const imageUrl = `https://www.highrisedigital.io${meta?.image || '/about-preview.png'}`;
+const imageUrl = `https://highrisedigital.io${meta?.image || '/about-preview.png'}`;
 
 export const metadata = {
   title: meta?.title,
@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: meta?.title,
     description: meta?.description,
-    url: 'https://www.highrisedigital.io/contact',
+    url: 'https://highrisedigital.io/contact',
     siteName: 'High Rise Digital',
     images: [
       {

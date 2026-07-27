@@ -2,7 +2,7 @@ import { siteMetadata } from "@/app/constants/metadata";
 
 const meta = siteMetadata.services as any;
 const rawImage = meta?.image || '/servicepng.png';
-const imageUrl = `https://www.highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
+const imageUrl = `https://highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
 
 export const metadata = {
   title: meta?.title || "Our Services | Digital Marketing, SEO & Web Development",
@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: meta?.title,
     description: meta?.description,
-    url: 'https://www.highrisedigital.io/services',
+    url: 'https://highrisedigital.io/services',
     siteName: 'High Rise Digital',
     images: [
       {

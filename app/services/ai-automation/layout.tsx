@@ -3,7 +3,7 @@ import { siteMetadata } from "@/app/constants/metadata";
 const serviceMeta = siteMetadata.services as any;
 const meta = serviceMeta?.["ai-automation"];
 const rawImage = meta?.image || '/ai.webp';
-const imageUrl = `https://www.highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
+const imageUrl = `https://highrisedigital.io${rawImage.startsWith('/') ? '' : '/'}${rawImage}`;
 
 export const metadata = {
   title: meta?.title || "AI Automation Agency | Smart Business Automation Solutions",
@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: meta?.title,
     description: meta?.description,
-    url: 'https://www.highrisedigital.io/services/ai-automation',
+    url: 'https://highrisedigital.io/services/ai-automation',
     siteName: 'High Rise Digital',
     images: [
       {

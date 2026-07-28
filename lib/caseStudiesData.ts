@@ -78,8 +78,8 @@ export const caseStudiesData: CaseStudy[] = [
     slug: "170-leads-increased-for-marketing-agency",
     category: "seo",
     isSocial: false,
-    title: "Marketing Agency Generated 1.76K Leads In 3 Months",
-    description: "See how we transformed Social Status's digital footprint, driving an 850% organic traffic surge and 1.76K+ qualified marketing agency leads.",
+ title: "Marketing Agency Generated 1.76K Leads In 3 Months",
+    description: "We transformed Social Media Agency digital footprint, driving an 850% organic traffic surge and 1.76K+ qualified leads.",
     primaryOutcome: "1.76K+ Leads",
     image: "/social-status.png",
     displayCategory: "Digital Marketing SEO",
@@ -87,9 +87,12 @@ export const caseStudiesData: CaseStudy[] = [
     location: "Australia",
     websiteName: "WordPress",
     metrics: [
-      { value: "1.76K+", label: "Qualified marketing leads generated in 3 months", highlight: true },
-      { value: "+850%", label: "Organic traffic growth achieved", highlight: false },
-      { value: "+12.5K", label: "Monthly organic visitors reached", highlight: false }
+      { value: "3,348", label: "People viewed your Business Profile", highlight: true },
+      { value: "+10.1%", label: "Profile views growth vs previous period", highlight: false },
+      { value: "1,381 (41%)", label: "Google Search – desktop traffic share", highlight: false },
+      { value: "1,065 (32%)", label: "Google Search – mobile traffic share", highlight: false },
+      { value: "508 (15%)", label: "Google Maps – desktop visibility", highlight: false },
+      { value: "394 (12%)", label: "Google Maps – mobile visibility", highlight: false }
     ],
     sections: [
       {
@@ -229,7 +232,7 @@ export const caseStudiesData: CaseStudy[] = [
       subheader: "Live platform snapshots capturing the exact transition loops and metric adjustments.",
       images: [
         {
-          src: "/breez-care-result.jpg",
+          src: "/rino-results.jpg",
           alt: "Social Status Google Analytics and Traffic Growth Proof",
           caption: "Figure 4.1: Live metrics capture indicating massive organic scaling up to 1.76K+ qualified leads.",
           color: "blue"
@@ -246,19 +249,19 @@ export const caseStudiesData: CaseStudy[] = [
     slug: "11-total-sales-revenue-increased-for-fastion-brand", 
     category: "seo",
     isSocial: false,
-   title: "Nordic Socks | +28% Organic Traffic & Revenue Growth",
-    description: "Discover how we scaled Nordic Socks' organic traffic by 28% and boosted overall eCommerce revenue through an advanced Shopify SEO framework.",
-    primaryOutcome: "+28% Organic Traffic",
+    title: "Scaled Fashion Brand organic traffic by 28% and boosted overall eCommerce revenue",
+    description: "We scaled Fashion Brand organic traffic by 28% and boosted overall eCommerce revenue through an advanced Shopify SEO.",
+    primaryOutcome: "6,120 Sessions",
     image: "/nordic-socks.png", 
     displayCategory: "E-Commerce SEO",
     clientName: "Nordic Socks",
-    location: "Global / USA",
+    location: " USA",
     websiteName: "E-commerce",
     metrics: [
-      { value: "+28%", label: "Increase in organic traffic", highlight: true },
-      { value: "+24%", label: "Growth in total online revenue", highlight: false },
-      { value: "+19%", label: "Increase in transactional orders", highlight: false },
-      { value: "+15%", label: "Growth in average order value", highlight: false }
+      { value: "6,120", label: "Sessions generated with +28% growth", highlight: true },
+      { value: "A$51.4K", label: "Total sales achieved with +11% growth", highlight: false },
+      { value: "385", label: "Total orders captured with +10% growth", highlight: false },
+      { value: "A$46.1K", label: "Gross sales recorded with +9% growth", highlight: false }
     ],
     sections: [
       {
@@ -393,13 +396,13 @@ export const caseStudiesData: CaseStudy[] = [
     category: "seo",
     isSocial: false,
     title: "Fitness Brand SEO Case Study: 1,000+ Leads in 3 Months",
-    description: "Explore our fitness SEO success story delivering 1,000+ targeted gym and supplement leads through rapid technical optimization and high-intent content.",
+    description: "We deliver 1,000+ targeted gym and supplement leads through rapid technical optimization and high-intent content.",
     primaryOutcome: "1,000+ Leads",
     image: "/fitness-brand.png", 
     displayCategory: "Fitness SEO",
-    clientName: "FitCore Gyms & Nutrition",
-    location: "Global / USA",
-    websiteName: "WordPress / Custom",
+    clientName: "Velocity",
+    location: "USA",
+    websiteName: "WordPress",
     metrics: [
       { value: "1,000+", label: "Qualified fitness leads generated in 3 months", highlight: true },
       { value: "+6.69K", label: "Organic clicks in just 3 months", highlight: false },
@@ -519,18 +522,18 @@ export const caseStudiesData: CaseStudy[] = [
         "With an optimized digital infrastructure now fully in place, the brand is primed for continuous scaling, increased market authority, and massive industry success."
       ]
     },
-    proof: {
-      header: "Verified Analytics & Execution Proof:",
-      subheader: "Live platform snapshots capturing the exact transition loops and traffic scaling performance.",
-      images: [
-        {
-          src: "/breez-care-result.jpg", 
-          alt: "Fitness Brand Analytics and Lead Generation Proof",
-          caption: "Figure 3.1: Live metrics highlighting the explosive 6.69K click velocity and 1,000+ lead milestone achievement.",
-          color: "blue"
-        }
-      ]
-    }
+    // proof: {
+    //   header: "Verified Analytics & Execution Proof:",
+    //   subheader: "Live platform snapshots capturing the exact transition loops and traffic scaling performance.",
+    //   images: [
+    //     {
+    //       src: "/breez-care-result.jpg", 
+    //       alt: "Fitness Brand Analytics and Lead Generation Proof",
+    //       caption: "Figure 3.1: Live metrics highlighting the explosive 6.69K click velocity and 1,000+ lead milestone achievement.",
+    //       color: "blue"
+    //     }
+    //   ]
+    // }
   },
 // ========================================================
   // 🔥 LOCAL RESTAURANT AUSTRALIA (LOCAL SEO CASE STUDY) to realestete
@@ -539,19 +542,19 @@ export const caseStudiesData: CaseStudy[] = [
     slug: "6.69K-clicks-in-just-3-months-for-real-estate",
     category: "seo",
     isSocial: false,
-     title: "Real Estate Company Achieved 1,000+ Leads In 3 Months With SEO",
-    description: "Learn how our targeted local real estate SEO strategy helped a property agency generate over 1,000 qualified buyer and vendor leads in 90 days.",
-    primaryOutcome: "1,000+ Leads",
+title: "Real Estate Company Achieved 1,000+ Leads In 3 Months With SEO",
+    description: "Our targeted local real estate SEO strategy helped a property agency generate over 1,000 qualified buyer and vendor leads in 90 days.",
+    primaryOutcome: "6.69K Clicks",
     image: "/real-estate.png", 
     displayCategory: "Local SEO",
-    clientName: "Prime Horizon Real Estate",
+    clientName: "Apex Reality Group",
     location: "Australia",
     websiteName: "WordPress",
     metrics: [
-      { value: "1,000+", label: "Total Real Estate Leads generated", highlight: true },
-      { value: "+320K", label: "Total Search Impressions achieved", highlight: false },
-      { value: "#5", label: "Average SERP Position stabilized", highlight: false },
-      { value: "3.1%", label: "Average Click-Through Rate (CTR)", highlight: false }
+      { value: "6.69K", label: "Total Clicks in the last 3 months", highlight: true },
+      { value: "291K", label: "Total Impressions in the last 3 months", highlight: false },
+      { value: "2.3%", label: "Average Click-Through Rate (CTR)", highlight: false },
+      { value: "7", label: "Average SERP Position", highlight: false }
     ],
     sections: [
       {
@@ -668,7 +671,7 @@ export const caseStudiesData: CaseStudy[] = [
       subheader: "Live platform snapshots capturing the exact metrics changes and search positioning parameters.",
       images: [
         {
-          src: "/breez-care-result.jpg", 
+          src: "/burger-results.jpg", 
           alt: "Google Search Console performance dashboard capturing organic real estate lead scaling parameters.",
           caption: "Figure 4.1: Verified tracking profile displaying average position improvements and 1,000+ lead milestone spikes.",
           color: "blue"

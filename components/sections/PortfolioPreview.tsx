@@ -92,7 +92,7 @@ export default function PortfolioStylishSlider() {
 
         {/* Marquee Track with minimal gap (gap-1) */}
         <div
-          className="flex gap-1 shrink-0 w-max"
+          className="flex gap-1 md:gap-8 lg:gap-12 xl:gap-14 2xl:gap-18 shrink-0 w-max"
           style={{
             animation: "marquee 35s linear infinite",
             animationPlayState: isPaused ? "paused" : "running",
@@ -104,7 +104,7 @@ export default function PortfolioStylishSlider() {
               className="w-[320px] md:w-[480px] lg:w-[540px] shrink-0 px-1"
             >
                 <Link href={`/case-studies/${project.slug}`} className="block w-full">
-                <div className="w-full h-[280px] md:h-[340px] 2xl:h-[400px] group relative rounded-[2rem] overflow-hidden bg-transparent cursor-pointer flex flex-col justify-end p-5">
+                <div className="w-full h-[280px] md:h-[340px] xl:h-[400px]  2xl:h-[580px] group relative rounded-[2rem] overflow-hidden bg-transparent cursor-pointer flex flex-col justify-end p-5 lg:p-12 xl:p-18 2xl:p-32">
                   {/* Background Image with smooth zoom on hover */}
                   <div className="absolute inset-0 w-full h-full">
                     <Image

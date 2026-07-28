@@ -3,7 +3,7 @@ export const revalidate = 3600; // Har 1 ghante (3600 seconds) baad background m
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion"; 
+import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, Flame, Globe, Tag, MapPin, Link2, X, Eye } from "lucide-react";
 import { CaseStudy } from "@/lib/caseStudiesData";
 
@@ -97,8 +97,8 @@ export default function CaseStudyClientContent({ project }: CaseStudyProps) {
             </div>
 
             {/* RIGHT: Image Adjusted Right Next to the Main Title */}
-            <div className="order-1 lg:order-2 lg:col-span-5 w-full">
-              <div className="relative aspect-[16/11] sm:aspect-[4/3] md:aspect-[16/10] lg:aspect-[4/3] w-full rounded-2xl overflow-hidden  bg-transparrent group">
+            <div className="order-1 lg:order-2 lg:col-span-6 w-full"> {/* 👈 Column span 5 se barha kar 6 kar diya taake width barh jaye */}
+              <div className="relative aspect-[16/9] md:aspect-[16/10] w-full rounded-2xl overflow-hidden bg-transparent group shadow-none"> {/* 👈 Aspect ratio wide kar diya aur shadow-none ensure kar di */}
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -106,7 +106,7 @@ export default function CaseStudyClientContent({ project }: CaseStudyProps) {
                   className="object-cover transition-all duration-700 group-hover:scale-[1.02]"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
+                {/* ❌ Black gradient overlay yahan se hata diya hai taake koi shadow ya dark effect na aaye */}
               </div>
             </div>
 
@@ -315,7 +315,7 @@ export default function CaseStudyClientContent({ project }: CaseStudyProps) {
                     <p className="text-white text-[16px] md:text-base lg:text-[17px] 2xl:text-xl font-medium tracking-[2px] mb-2">
                       {card.label}
                     </p>
-                 
+
                   </div>
                 </div>
               ))}

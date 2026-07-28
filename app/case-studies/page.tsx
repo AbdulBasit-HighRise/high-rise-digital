@@ -84,7 +84,7 @@ export const projects = [
   // --- SEO PERFORMANCE CAMPAIGNS (6 Projects) ---
  {
     slug: "11-total-sales-revenue-increased-for-fastion-brand",
-    title: "nordic-socks 28% Organic Traffic.",
+    title: "Scaled Fashion Brand organic traffic by 28% and boosted overall eCommerce revenue",
     category: "seo",
     image: "/nordic-socks.png",
     metaTitle: "Nordic Socks Case Study | +28% Organic Traffic Growth",

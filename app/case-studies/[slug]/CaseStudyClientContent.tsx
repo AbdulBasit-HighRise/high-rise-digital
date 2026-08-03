@@ -77,124 +77,123 @@ export default function CaseStudyClientContent({ project }: CaseStudyProps) {
           📊 2. PROJECT INTRO SECTION (Background Color: #1E2939)
           ======================================================== */}
       <section className="w-full bg-[#1E2939] py-20 border-b border-white/[0.02]">
-        <div className="max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-[1500px] mx-auto px-4 sm:px-8 md:px-12 2xl:px-20 space-y-16">
+      <div className="max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-[1500px] mx-auto px-4 sm:px-8 md:px-12 2xl:px-20 space-y-16">
 
-          {/* TOP BLOCK: Picture and Main Title Side-by-Side */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center animate-fadeIn">
+  {/* TOP BLOCK: Picture and Main Title Side-by-Side */}
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center animate-fadeIn">
 
-            {/* LEFT: Large Punchy Typography & Description */}
-            <div className="order-2 lg:order-1 lg:col-span-7 space-y-6">
-              <h2
-                style={{ textTransform: 'none' }}
-                className="text-[2.0rem] md:text-[2.5rem] lg:text-[2.5rem] 2xl:text-[3.0rem] font-black tracking-tight leading-[1.1] text-white"
-              >
-                {project.description}
-              </h2>
-              <div className="h-1 w-24 bg-blue-500" />
-              <p className="text-zinc-300 text-base md:text-lg lg:text-[19px] 2xl:text-xl font-medium leading-relaxed max-w-2xl">
-                Transforming a fragmented digital presence into a high-yielding, conversion-focused revenue engine through data-driven technical optimization.
-              </p>
-            </div>
+    {/* LEFT: Large Punchy Typography & Description */}
+    <div className="lg:col-span-6 space-y-6">
+      <h2
+        style={{ textTransform: 'none' }}
+        className="text-[2.0rem] md:text-[2.5rem] lg:text-[2.5rem] 2xl:text-[3.0rem] font-black tracking-tight leading-[1.1] text-white"
+      >
+        {project.description}
+      </h2>
+      <div className="h-1 w-24 bg-blue-500" />
+      <p className="text-zinc-300 text-base md:text-lg lg:text-[19px] 2xl:text-xl font-medium leading-relaxed max-w-2xl">
+        Transforming a fragmented digital presence into a high-yielding, conversion-focused revenue engine through data-driven technical optimization.
+      </p>
+    </div>
 
-            {/* RIGHT: Image Adjusted Right Next to the Main Title */}
-            <div className="order-1 lg:order-2 lg:col-span-6 w-full"> {/* 👈 Column span 5 se barha kar 6 kar diya taake width barh jaye */}
-              <div className="relative aspect-[16/9] md:aspect-[16/10] w-full rounded-2xl overflow-hidden bg-transparent group shadow-none"> {/* 👈 Aspect ratio wide kar diya aur shadow-none ensure kar di */}
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-all duration-700 group-hover:scale-[1.02]"
-                  priority
-                />
-                {/* ❌ Black gradient overlay yahan se hata diya hai taake koi shadow ya dark effect na aaye */}
-              </div>
-            </div>
+    {/* RIGHT: Image Adjusted Right Next to the Main Title */}
+    <div className="lg:col-span-6 w-full">
+      <div className="relative aspect-[16/9] md:aspect-[16/10] w-full rounded-2xl overflow-hidden bg-transparent group shadow-none">
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          className="object-cover transition-all duration-700 group-hover:scale-[1.02]"
+          priority
+        />
+      </div>
+    </div>
 
-          </div>
+  </div>
 
-          {/* MIDDLE BLOCK: Premium Performance Metrics Strip */}
-          <div className="flex flex-nowrap items-center justify-between gap-4 md:gap-8 pt-10 border-t border-white/[0.06] animate-fadeIn delay-100 w-full overflow-x-auto sm:overflow-visible scrollbar-none">
-            {project.metrics.map((metric, i) => (
-              <div key={i} className="flex flex-col border-l border-zinc-700 pl-4 md:pl-5 hover:border-zinc-400 transition-colors duration-300 flex-1 min-w-[100px] sm:min-w-0">
-                <span className={`text-xl sm:text-4xl md:text-4xl lg:text-4xl font-black tracking-tighter leading-none ${metric.highlight ? 'text-blue-500' : 'text-white'}`}>
-                  {metric.value}
-                </span>
-                <span className="text-[10px] font-bold uppercase tracking-[2px] text-zinc-400 mt-3 block leading-tight">
-                  {metric.label}
-                </span>
-              </div>
-            ))}
-          </div>
+  {/* MIDDLE BLOCK: Premium Performance Metrics Strip */}
+  <div className="flex flex-nowrap items-center justify-between gap-4 md:gap-8 pt-10 border-t border-white/[0.06] animate-fadeIn delay-100 w-full overflow-x-auto sm:overflow-visible scrollbar-none">
+    {project.metrics.map((metric, i) => (
+      <div key={i} className="flex flex-col border-l border-zinc-700 pl-4 md:pl-5 hover:border-zinc-400 transition-colors duration-300 flex-1 min-w-[100px] sm:min-w-0">
+        <span className={`text-xl sm:text-4xl md:text-4xl lg:text-4xl font-black tracking-tighter leading-none ${metric.highlight ? 'text-blue-500' : 'text-white'}`}>
+          {metric.value}
+        </span>
+        <span className="text-[10px] font-bold uppercase tracking-[2px] text-zinc-400 mt-3 block leading-tight">
+          {metric.label}
+        </span>
+      </div>
+    ))}
+  </div>
 
-          {/* 📊 BOTTOM BLOCK: Fully Dynamic Blueprints & Overview Card */}
-          <div className="w-full bg-[#111827] border border-white/[0.08] rounded-2xl p-6 md:p-8 relative overflow-hidden shadow-2xl group animate-slideUp">
-            <div className="absolute top-0 left-0 h-1 w-full bg-blue-500" />
+  {/* 📊 BOTTOM BLOCK: Fully Dynamic Blueprints & Overview Card */}
+  <div className="w-full bg-[#111827] border border-white/[0.08] rounded-2xl p-6 md:p-8 relative overflow-hidden shadow-2xl group animate-slideUp">
+    <div className="absolute top-0 left-0 h-1 w-full bg-blue-500" />
 
-            <div className="mb-6 border-b border-white/[0.04] pb-4">
-              <h3 className="text-lg font-black uppercase tracking-wider text-zinc-300">
-                Project Blueprints & Overview
-              </h3>
-            </div>
+    <div className="mb-6 border-b border-white/[0.04] pb-4">
+      <h3 className="text-lg font-black uppercase tracking-wider text-zinc-300">
+        Project Blueprints & Overview
+      </h3>
+    </div>
 
-            {/* Grid Content */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 items-center text-left">
+    {/* Grid Content */}
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 items-center text-left">
 
-              {/* 1. Dynamic Category */}
-              <div className="flex items-center gap-3 md:gap-4">
-                <div className="p-2.5 md:p-3 rounded-xl bg-[#1E2939] border border-white/5 text-blue-500 shrink-0">
-                  <Tag size={16} className="md:w-[18px] md:h-[18px]" />
-                </div>
-                <div className="min-w-0">
-                  <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-zinc-500 block mb-0.5">Category</span>
-                  <span className="text-sm md:text-base font-black text-zinc-200 block truncate">
-                    {project.displayCategory || (project.category === 'seo' ? 'Local SEO' : 'Paid Social')}
-                  </span>
-                </div>
-              </div>
-
-              {/* 2. Dynamic Client Name */}
-              <div className="flex items-center gap-3 md:gap-4">
-                <div className="p-2.5 md:p-3 rounded-xl bg-[#1E2939] border border-white/5 text-blue-500 shrink-0">
-                  <Globe size={16} className="md:w-[18px] md:h-[18px]" />
-                </div>
-                <div className="min-w-0">
-                  <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-zinc-500 block mb-0.5">Client</span>
-                  <span className="text-sm md:text-base font-black text-zinc-200 truncate block">
-                    {project.clientName || project.title}
-                  </span>
-                </div>
-              </div>
-
-              {/* 3. Dynamic Location */}
-              <div className="flex items-center gap-3 md:gap-4">
-                <div className="p-2.5 md:p-3 rounded-xl bg-[#1E2939] border border-white/5 text-blue-500 shrink-0">
-                  <MapPin size={16} className="md:w-[18px] md:h-[18px]" />
-                </div>
-                <div className="min-w-0">
-                  <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-zinc-500 block mb-0.5">Location</span>
-                  <span className="text-sm md:text-base font-black text-zinc-200 block truncate">
-                    {project.location || 'Australia / Global'}
-                  </span>
-                </div>
-              </div>
-
-              {/* 4. Dynamic Website URL */}
-              <div className="flex items-center gap-3 md:gap-4">
-                <div className="p-2.5 md:p-3 rounded-xl bg-[#1E2939] border border-white/5 text-blue-500 shrink-0">
-                  <Link2 size={16} className="md:w-[18px] md:h-[18px]" />
-                </div>
-                <div className="min-w-0">
-                  <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-zinc-500 block mb-0.5">Website</span>
-                  <span className="text-sm md:text-base font-black text-zinc-200 truncate block">
-                    {project.websiteName || 'Multiple Webstacks'}
-                  </span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
+      {/* 1. Dynamic Category */}
+      <div className="flex items-center gap-3 md:gap-4">
+        <div className="p-2.5 md:p-3 rounded-xl bg-[#1E2939] border border-white/5 text-blue-500 shrink-0">
+          <Tag size={16} className="md:w-[18px] md:h-[18px]" />
         </div>
+        <div className="min-w-0">
+          <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-zinc-500 block mb-0.5">Category</span>
+          <span className="text-sm md:text-base font-black text-zinc-200 block truncate">
+            {project.displayCategory || (project.category === 'seo' ? 'Local SEO' : 'Paid Social')}
+          </span>
+        </div>
+      </div>
+
+      {/* 2. Dynamic Client Name */}
+      <div className="flex items-center gap-3 md:gap-4">
+        <div className="p-2.5 md:p-3 rounded-xl bg-[#1E2939] border border-white/5 text-blue-500 shrink-0">
+          <Globe size={16} className="md:w-[18px] md:h-[18px]" />
+        </div>
+        <div className="min-w-0">
+          <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-zinc-500 block mb-0.5">Client</span>
+          <span className="text-sm md:text-base font-black text-zinc-200 truncate block">
+            {project.clientName || project.title}
+          </span>
+        </div>
+      </div>
+
+      {/* 3. Dynamic Location */}
+      <div className="flex items-center gap-3 md:gap-4">
+        <div className="p-2.5 md:p-3 rounded-xl bg-[#1E2939] border border-white/5 text-blue-500 shrink-0">
+          <MapPin size={16} className="md:w-[18px] md:h-[18px]" />
+        </div>
+        <div className="min-w-0">
+          <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-zinc-500 block mb-0.5">Location</span>
+          <span className="text-sm md:text-base font-black text-zinc-200 block truncate">
+            {project.location || 'Australia / Global'}
+          </span>
+        </div>
+      </div>
+
+      {/* 4. Dynamic Website URL */}
+      <div className="flex items-center gap-3 md:gap-4">
+        <div className="p-2.5 md:p-3 rounded-xl bg-[#1E2939] border border-white/5 text-blue-500 shrink-0">
+          <Link2 size={16} className="md:w-[18px] md:h-[18px]" />
+        </div>
+        <div className="min-w-0">
+          <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-zinc-500 block mb-0.5">Website</span>
+          <span className="text-sm md:text-base font-black text-zinc-200 truncate block">
+            {project.websiteName || 'Multiple Webstacks'}
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
       </section>
 
       {/* ========================================================

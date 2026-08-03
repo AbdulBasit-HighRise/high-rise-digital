@@ -220,7 +220,6 @@ export default function WebDevPage() {
           </div>
         </div>
       </section>
-      <ServiceCTA />
 
       {/* 🎯 CORE STACK - AI Services Section */}
       <section className="relative py-16 2xl:py-40 px-6 overflow-hidden bg-[#111827]">
@@ -296,6 +295,7 @@ export default function WebDevPage() {
         </div>
       </section>
 
+      <ServiceCTA />
 
       {/* 🎯 WORKING PROCESS TIMELINE SECTION */}
       <section className="relative py-16 md:py-24 bg-[#1E2939] overflow-hidden selection:bg-blue-600/30">

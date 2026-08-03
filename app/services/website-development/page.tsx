@@ -334,110 +334,111 @@ export default function WebDevPage() {
       <Stats />
 
       {/* FEATURED WEBSITE PROJECTS SLIDER */}
-      <section className="relative py-16 md:py-20 2xl:py-32 bg-[#1E2939] text-white overflow-hidden select-none border-t border-white/5">
-        <div className="absolute top-1/3 left-1/4 w-[600px] 2xl:w-[1000px] h-[600px] bg-blue-600/[0.02] blur-[150px] pointer-events-none" />
-
-        <div className="relative z-10 w-full px-6 max-w-[1400px] mx-auto mb-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/5 pb-6">
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-left max-w-4xl"
-            >
-              <h3 className="text-[1.8rem] md:text-[2.5rem] lg:text-[2.5rem] 2xl:text-[3.2rem] font-black tracking-tight leading-[1.1] lg:leading-none text-white mb-4">
-                Featured{" "}
-                <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                  Website Design Projects
-                </span>
-              </h3>
-              <p className="mt-2 text-white text-[16px] md:text-base lg:text-[17px] 2xl:text-xl font-medium leading-relaxed opacity-80">
-                We love helping businesses grow with websites that get results. Browse our recent projects to see how we can bring your ideas to life.
-              </p>
-            </motion.div>
-
-            <Link
-              href="/case-studies"
-              className="hidden sm:flex items-center gap-3 text-[10px] md:text-xs 2xl:text-[13px] uppercase tracking-[0.25em] font-black text-white hover:text-cyan-400 transition-all duration-300 group"
-            >
-              <span className="relative pb-1">
-                View All Projects
-                <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full" />
-              </span>
-            </Link>
-          </div>
-        </div>
-
-        <div 
-          className="w-full overflow-hidden relative flex py-4"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
-          <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-r from-[#1E2939] to-transparent z-20 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-l from-[#1E2939] to-transparent z-20 pointer-events-none" />
-
-          <div
-            className="flex gap-1 shrink-0 w-max"
-            style={{
-              animation: "marquee 35s linear infinite",
-              animationPlayState: isPaused ? "paused" : "running",
-            }}
-          >
-            {duplicatedProjects.map((project, i) => (
-              <div
-                key={`${project.id}-${i}`}
-                className="w-[320px] md:w-[480px] lg:w-[540px] shrink-0 px-1"
-              >
-                <a
-                  href={project.slug}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full"
+      <section className="relative py-16 md:py-20 2xl:py-32 bg-[#111827] text-white overflow-hidden select-none border-t border-white/5">
+            <div className="absolute top-1/3 left-1/4 w-[600px] 2xl:w-[1000px] h-[600px] bg-blue-600/[0.02] blur-[150px] pointer-events-none" />
+    
+            <div className="relative z-10 w-full px-6 max-w-[1800px] 2xl:max-w-[2100px] mx-auto mb-10">
+              <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/5 pb-6">
+                <motion.div
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="text-left max-w-2xl"
                 >
-                  <div className="w-full h-[280px] md:h-[340px] 2xl:h-[400px] group relative rounded-[2rem] overflow-hidden bg-transparent cursor-pointer flex flex-col justify-end p-5">
-                    <div className="absolute inset-0 w-full h-full">
-                      <Image
-                        src={project.image || "/placeholder.png"}
-                        alt={project.title}
-                        fill
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                        className="object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    </div>
-
-                  
-
-                    <div className="relative z-20">
-                      <div className="bg-black/75 backdrop-blur-xl px-5 py-3.5 rounded-2xl border border-white/10 shadow-2xl flex items-center justify-between gap-4 transition-all duration-500 ease-out group-hover:border-cyan-500/40 group-hover:bg-black/90 transform translate-y-16 group-hover:translate-y-0 opacity-0 group-hover:opacity-100">
-                        <span className="text-xs md:text-sm lg:text-base font-bold tracking-tight text-white line-clamp-2">
-                          {project.title}
-                        </span>
-
-                        <div className="w-9 h-9 2xl:w-10 2xl:h-10 rounded-full bg-white/[0.05] border border-white/10 flex items-center justify-center text-zinc-300 group-hover:text-cyan-400 group-hover:bg-cyan-500/20 group-hover:border-cyan-500/50 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 shrink-0">
-                          <ArrowUpRight className="w-4 h-4" />
+                  <h3 className="text-[1.8rem] md:text-[2.5rem] lg:text-[2.5rem] 2xl:text-[3.2rem] font-black tracking-tight leading-[1.1] lg:leading-none text-white mb-4">
+                    Our{" "}
+                    <span className="sm:inline bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                      SEO Results
+                    </span>
+                  </h3>
+                  <p className="mt-2 text-white text-[16px] md:text-base lg:text-[17px] 2xl:text-xl font-medium leading-relaxed opacity-80">
+                    We deliver clear, measurable growth by boosting your Google rankings, increasing organic traffic, and driving real revenue to your business.
+                  </p>
+                </motion.div>
+    
+                <Link
+                  href="/case-studies"
+                  className="hidden sm:flex items-center gap-3 text-[10px] md:text-xs 2xl:text-[13px] uppercase tracking-[0.25em] font-black text-white hover:text-cyan-400 transition-all duration-300 group"
+                >
+                  <span className="relative pb-1">
+                    View All Projects
+                    <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full" />
+                  </span>
+                </Link>
+              </div>
+            </div>
+    
+            {/* INFINITE MARQUEE SLIDER CONTAINER */}
+            <div 
+              className="w-full overflow-hidden relative flex py-4"
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+            >
+              {/* Left & Right Gradient Shadows */}
+              <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 lg:w-48 bg-gradient-to-r from-[#111827] to-transparent z-20 pointer-events-none" />
+              <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 lg:w-48 bg-gradient-to-l from-[#111827] to-transparent z-20 pointer-events-none" />
+    
+              {/* Marquee Track */}
+              <div
+                className="flex gap-5 md:gap-6 shrink-0 w-max"
+                style={{
+                  animation: "marquee 42s linear infinite",
+                  animationPlayState: isPaused ? "paused" : "running",
+                }}
+              >
+                {duplicatedProjects.map((project, i) => (
+                  <div
+                    key={`${project.id}-${i}`}
+                    // Mobile se le kar 2K/4K tak completely optimized widths
+                    className="w-[300px] sm:w-[360px] md:w-[440px] lg:w-[540px] 2xl:w-[830px] shrink-0 px-1"
+                  >
+                    <Link href={`/case-studies/${project.slug}`} className="block w-full">
+                      <div className="w-full h-[280px] sm:h-[320px] md:h-[380px] lg:h-[430px] 2xl:h-[580px] group relative rounded-[2rem] md:rounded-[2.5rem] overflow-hidden bg-transparent cursor-pointer flex flex-col justify-end p-5 md:p-8">
+                        {/* Background Image */}
+                        <div className="absolute inset-0 w-full h-full">
+                          <Image
+                            src={project.image || "/placeholder.png"}
+                            alt={project.title}
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                            className="object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                          />
+                          {/* Subtle dark gradient overlay */}
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                        </div>
+    
+                        {/* Title & Arrow Box */}
+                        <div className="relative z-20">
+                          <div className="bg-black/75 backdrop-blur-xl px-5 py-3.5 md:px-8 md:py-6 rounded-2xl border border-white/10 shadow-2xl flex items-center justify-between gap-4 transition-all duration-500 ease-out group-hover:border-cyan-500/40 group-hover:bg-black/90 transform translate-y-16 group-hover:translate-y-0 opacity-0 group-hover:opacity-100">
+                            <span className="text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-2xl font-bold tracking-tight text-white line-clamp-2">
+                              {project.title}
+                            </span>
+    
+                            <div className="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 2xl:w-16 2xl:h-16 rounded-full bg-white/[0.05] border border-white/10 flex items-center justify-center text-zinc-300 group-hover:text-cyan-400 group-hover:bg-cyan-500/20 group-hover:border-cyan-500/50 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 shrink-0">
+                              <ArrowUpRight className="w-4 h-4 lg:w-6 lg:h-6 2xl:w-7 2xl:h-7" />
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
-                </a>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-
-        <style jsx global>{`
-          @keyframes marquee {
-            0% {
-              transform: translateX(0%);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-        `}</style>
-      </section>
+            </div>
+    
+            {/* CSS Keyframes for Infinite Marquee */}
+            <style jsx global>{`
+              @keyframes marquee {
+                0% {
+                  transform: translateX(0%);
+                }
+                100% {
+                  transform: translateX(-50%);
+                }
+              }
+            `}</style>
+       </section>
 
       <ServiceCTA />
 

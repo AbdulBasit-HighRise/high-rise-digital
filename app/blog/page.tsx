@@ -1,12 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { User, ArrowRight, Flame } from "lucide-react";
+// 🎯 Yahan lib folder se posts import kar li hain
+import { posts } from "@/lib/blogData"; 
 
 export default async function BlogPage() {
-  // 🎯 Contentful ko mukammal remove kar ke empty static array set kar diya hai
-  // Taake aapki design aur empty state logic ("No insights published yet...") bilkul sahi kaam kare
-  const posts: any[] = [];
-
   return (
     <main className="bg-[#111827] text-white min-h-screen selection:bg-blue-600 antialiased overflow-x-hidden">
       {/* 1. HERO SECTION */}
@@ -57,7 +55,8 @@ export default async function BlogPage() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {posts.map((post) => (
-              <div key={post.slug} className="col-span-1">
+              // 🎯 Yahan post.size use kar liya hai agar grid spans ko dynamic rakhna ho
+              <div key={post.slug} className={`col-span-1 ${post.size || ""}`}>
                 <Link
                   href={`/blog/${post.slug}`}
                   className="group flex flex-col justify-between relative h-full bg-[#030712] border border-white/5 rounded-2xl overflow-hidden transition-all duration-500 hover:border-blue-500/20 hover:bg-zinc-950/50 shadow-xl"

@@ -16,12 +16,26 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
-      // 🎯 ADDED CONTENTFUL HOSTNAME: Ab dynamic images allow ho jayengi
+      {
+        protocol: 'https',
+        hostname: 'unsplash.com',
+      },
       {
         protocol: 'https',
         hostname: 'images.ctfassets.net',
       },
     ],
+  },
+
+  // 🔀 REDIRECTS: /blog/services/... ko direct redirect karne ke liye
+  async redirects() {
+    return [
+      {
+        source: '/blog/services/:slug',
+        destination: '/services/:slug',
+        permanent: true,
+      },
+    ];
   },
 
   // 🛡️ STABILITY: Build errors ko bypass karne ke liye

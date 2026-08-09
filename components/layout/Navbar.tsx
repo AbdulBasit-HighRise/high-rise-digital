@@ -148,9 +148,9 @@ export default function Navbar() {
                   >
                     <Link 
                       href={link.href} 
-                      className={`flex items-center gap-1 px-2.5 py-1 text-[14px] xl:text-[15px] font-black uppercase tracking-widest transition-all ${isActive || showServices ? "text-white" : "text-zinc-400 hover:text-white"}`}
+                      className={`flex items-center gap-1 px-2.5 py-1 text-[14px] xl:text-[15px] font-black uppercase tracking-widest transition-all ${isActive || showServices ? "text-white" : "text-white-400 hover:text-white"}`}
                     >
-                      {link.name} <ChevronDown size={11} className="group-hover:rotate-180 transition-transform duration-300 shrink-0 text-zinc-400" />
+                      {link.name} <ChevronDown size={11} className="group-hover:rotate-180 transition-transform duration-300 shrink-0 text-white-400" />
                     </Link>
                     
                     {showServices && (

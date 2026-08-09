@@ -58,7 +58,7 @@ export default function PortfolioStylishSlider() {
                <h3 className="text-[1.8rem] md:text-[2.5rem] lg:text-[2.5rem] 2xl:text-[3.2rem] font-black tracking-tight leading-[1.1] lg:leading-none text-white mb-4">
                  Our{" "}
                  <span className="sm:inline bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                   SEO Results
+                   Recent Projects
                  </span>
                </h3>
                <p className="mt-2 text-white text-[16px] md:text-base lg:text-[17px] 2xl:text-xl font-medium leading-relaxed opacity-80">

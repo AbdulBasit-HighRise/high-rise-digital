@@ -100,7 +100,7 @@ export default function PortfolioStylishSlider() {
                <div
                  key={`${project.id}-${i}`}
                  // Mobile se le kar 2K/4K tak completely optimized widths
-                 className="w-[320px] sm:w-[360px] md:w-[420px] lg:w-[460px] 2xl:w-[650px] shrink-0 px-1"
+                 className="w-[280px] sm:w-[360px] md:w-[420px] lg:w-[460px] 2xl:w-[520px] shrink-0 px-1"
                >
                  <Link href={`/case-studies/${project.slug}`} className="block w-full">
                    className="w-full h-[210px] sm:h-[240px] md:h-[300px] lg:h-[360px] 2xl:h-[450px] group relative rounded-[2rem] md:rounded-[2.5rem] overflow-hidden bg-transparent cursor-pointer flex flex-col justify-end p-5 md:p-8"

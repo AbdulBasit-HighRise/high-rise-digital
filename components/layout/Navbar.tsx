@@ -127,8 +127,8 @@ export default function Navbar() {
             <Image
               src="/HRD.png"
               alt="High Raise Digital Logo"
-              width={200}
-              height={50}
+              width={170}
+              height={40}
               priority
               className="h-6 md:h-10 lg:h-10 w-auto object-contain origin-left"
             />

@@ -130,7 +130,7 @@ export default function Navbar() {
               width={170}
               height={40}
               priority
-              className="h-6 md:h-10 lg:h-10 w-auto object-contain origin-left"
+              className="h-5 md:h-7 lg:h-7 w-auto object-contain origin-left"
             />
           </Link>
 

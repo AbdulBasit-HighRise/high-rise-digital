@@ -156,7 +156,7 @@ export default function Navbar() {
                     {showServices && (
                       <div className="absolute top-full left-1/2 -translate-x-1/2 w-60 p-2 bg-[#070707] border border-white/10 rounded-2xl shadow-2xl z-[110] before:absolute before:inset-x-0 before:-top-4 before:h-4 before:content-['']">
                         {link.subLinks?.map((sub: any) => (
-                          <Link key={sub.name} href={sub.href} className="block px-4 py-2.5 text-[14px] font-bold text-zinc-300 hover:text-white hover:bg-white/5 rounded-lg transition-all text-wrap">
+                          <Link key={sub.name} href={sub.href} className="block px-4 py-2.5 text-[14px] font-bold text-white-300 hover:text-white hover:bg-white/5 rounded-lg transition-all text-wrap">
                             {sub.name}
                           </Link>
                         ))}
@@ -166,7 +166,7 @@ export default function Navbar() {
                 );
               }
               return (
-                <Link key={link.name} href={link.href} className={`relative px-2.5 py-2 text-[14px] xl:text-[15px] font-black uppercase tracking-widest transition-all shrink-0 ${isActive ? "text-white" : "text-zinc-400 hover:text-white"}`}>
+                <Link key={link.name} href={link.href} className={`relative px-2.5 py-2 text-[14px] xl:text-[15px] font-black uppercase tracking-widest transition-all shrink-0 ${isActive ? "text-white" : "text-white-400 hover:text-white"}`}>
                   {link.name}
                 </Link>
               );
